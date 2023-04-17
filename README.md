@@ -77,9 +77,6 @@ Open model script notebook using Conda by runnning:
 
 Navigate to the directory with the model script and open the notebook.
 
-## Contributors 
-Sean Carter\
-Leif Howard\
-Myles Stokowski\
-Kevin Christensen
+
+
 
