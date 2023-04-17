@@ -24,10 +24,11 @@ In addidtion, the following software and packages are required:
 ## Setup 
 #### Conda
 It is recommended that you set up a conda environment prior to using this package.
-If you choose not to, continue down to [Earthengine authentication](#earthengine-authentication). 
+% conda create -n <NAME> python=3 
+% conda activate <NAME>
 ```
-% conda create -n gee python=3
-% source activate gee
+Install Packages
+
 % conda install -c conda-forge earthengine-api
 % conda install -c anaconda pandas
 % conda install -c anaconda geopandas
@@ -63,8 +64,6 @@ For this section, it is assumed that your environment is properly set up.
 * END_YEAR: Last year of interest range
 
 * GEE_PATH: The GEE path to your Earth Engine user directory. Must end in a forward slash. e.g. `users/kjchristensen93/`
-* AIS_POINT_PATH: The GEE path to your (unthinned) presence/absence asset. This is the path to an asset, not to a directory. It must NOT end in a forward slash.  
-* AIS_THINNED_POINT_PATH: The GEE path to your thinned presence/absence asset. This is a path to an asset, not to a directory. It mush NOT end in a forward slash.
 * ASSETID: GEE path to where the covariate files will be exported. This is a directory, it must end in a forward slash.
 
 #### Make Covariates: ./make_covariates.py
@@ -76,6 +75,7 @@ Open model script notebook using Conda by runnning:
 
 % python -m notebook
 
+Navigate to the directory with the model script and open the notebook.
 
 ## Contributors 
 Sean Carter\
