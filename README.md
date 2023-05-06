@@ -7,20 +7,11 @@ Non-Indigenous Aquatic Species habitat suitability prediction toolset
 You will need access to a Google Earth Engine account in order to use this package.
 In addidtion, the following software and packages are required:
 
-* anaconda commandline 
-* python 3
-* earthengine-api 
-* pandas
-* geopandas
-* numpy
-* json-e
-* requests
-* shapely
-* functools
-* Matplotlib
+* Create a Google Earth Engine account: https://code.earthengine.google.com/register
+* Download and Install anaconda commandline terminal:
+https://www.anaconda.com/products/distribution
 
 ---
-
 ## Setup 
 #### Conda
 It is recommended that you set up a conda environment prior to using this package.
