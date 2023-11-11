@@ -4,23 +4,25 @@ Non-Indigenous Aquatic Species habitat suitability prediction toolset
 ---
 
 ## Dependencies
-You will need to install Anaconda and access to a Google Earth Engine account to use this pipeline.
+You will need to install Anaconda (Conda) and to create a Google Earth Engine Developers account to use this pipeline.
 
 * Create a Google Earth Engine account: https://code.earthengine.google.com/register
 * Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
-* Scripts from this page stored on your local drive
+* Next download and store the scripts from this GitHub on your local drive.
 
 ---
-## Setup 
-#### Conda
+## Shorthand
 % indicates type this into the terminal
-Replace <NAME> with your chosen environment name (without<>)
 
+Replace NAME with your chosen environment name
+
+---
+## Setup Conda
 It is recommended that you set up a conda environment prior to using this package.
 
-% conda create -n <NAME> python=3 
+% conda create -n NAME python=3 
 
-% conda activate <NAME>
+% conda activate NAME
 ```
 Install Packages
 
