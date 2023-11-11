@@ -55,17 +55,19 @@ The following sections will walk you through making your yearly covariate raster
 For this section, it is assumed that your environment is properly set up.
 
 ### Config: aisconfig.ini
+Open the aisconfig.ini file
+
 * STATE: The US state that contains your presence/absence data points
 * STATE_ABBREVIATION: The two letter abbreviation for your chosen state. e.g. Montana = MT
 * START_YEAR: First year of interest range
 * END_YEAR: Last year of interest range
-
 * GEE_PATH: The GEE path to your Earth Engine user directory. Must end in a forward slash. e.g. `users/kjchristensen93/`
 * ASSETID: GEE path to where the covariate files will be exported. This is a directory, it must end in a forward slash.
 
 #### Make Covariates: ./make_covariates.py
-Required config variables:\
-START_YEAR, END_YEAR, STATE, ASSETID
+% cd C:/Users/Where_you_stored_make_covariates.py
+
+% python run make_covariates.py
 
 #### Open the notebook
 Open model script notebook using Conda by runnning:
