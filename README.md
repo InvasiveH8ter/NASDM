@@ -7,14 +7,19 @@ Non-Indigenous Aquatic Species habitat suitability prediction toolset
 You will need to install Anaconda and access to a Google Earth Engine account to use this pipeline.
 
 * Create a Google Earth Engine account: https://code.earthengine.google.com/register
-* Download and Install anaconda commandline terminal:
-https://www.anaconda.com/products/distribution
+* Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
+* Scripts from this page stored on your local drive
 
 ---
 ## Setup 
 #### Conda
+% indicates type this into the terminal
+Replace <NAME> with your chosen environment name (without<>)
+
 It is recommended that you set up a conda environment prior to using this package.
+
 % conda create -n <NAME> python=3 
+
 % conda activate <NAME>
 ```
 Install Packages
@@ -41,8 +46,8 @@ You should now have an environment variable set up an authentication key, which 
 
 ###### Protip: GEE = Google Earth Engine
 
-The two goals of this software are to produce a prediction visualization and produce a testing resukt histogram.
-In order to do both of these, we need a set of training data. 
+The two goals of this software are to produce a prediction visualization and produce a testing result histogram.
+In order to do both of these, we need a set of environmental training data. 
 
 The following sections will walk you through making your yearly covariate rasters.
 For this section, it is assumed that your environment is properly set up.
