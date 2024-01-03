@@ -12,16 +12,15 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 
 ---
 ## Shorthand
-% indicates type this into the terminal
-
-Replace NAME with your chosen environment name
+% indicates type this into the terminal (without %)
 
 ---
 ## Setup Conda
-It is recommended that you set up a conda environment prior to using this package.
+Create Conda environment prior to using this package. Replace NAME with your chosen environment name
 
 % conda create -n NAME python=3 
 
+Activate your new environment
 % conda activate NAME
 ```
 Install Packages
@@ -39,7 +38,11 @@ Install Packages
 
 #### Earthengine authentication
 Make sure you have access to an Earth Engine account and have installed Python earthengine-api. 
-Run `earthengine authenticate` and follow the prompts.\
+
+Run the following code and follow the prompts.
+
+% earthengine authenticate 
+
 You should now have an environment variable set up an authentication key, which allows you to directly initialize ee without authenticating it every time.
 
 ---
@@ -52,7 +55,7 @@ The two goals of this software are to produce a prediction visualization and pro
 In order to do both of these, we need a set of environmental training data. 
 
 The following sections will walk you through making your yearly covariate rasters.
-For this section, it is assumed that your environment is properly set up.
+For this section, it is assumed that your conda environment is properly set up.
 
 ### Config: aisconfig.ini
 Open the aisconfig.ini file
