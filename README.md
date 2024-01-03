@@ -13,7 +13,6 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 ---
 ## Shorthand
 % indicates type this into the terminal (without %)
-
 ---
 ## Setup Conda
 Create Conda environment prior to using this package. Replace NAME with your chosen environment name
@@ -52,13 +51,18 @@ You should now have an environment variable set up an authentication key, which 
 ###### Protip: GEE = Google Earth Engine
 
 The two goals of this software are to produce a prediction visualization and produce a testing result histogram.
-In order to do both of these, we need a set of environmental training data. 
+In order to do both of these, we need a set of environmental data. 
 
-The following sections will walk you through making your yearly covariate rasters.
+The following sections will walk you through making your yearly environmental rasters.
 For this section, it is assumed that your conda environment is properly set up.
 
+### Set up GEE directories
+Go to https://developers.google.com/earth-engine
+Create folder in your assets tab to store your yearly raster images in.  
+
+
 ### Config: aisconfig.ini
-Open the aisconfig.ini file
+Open the aisconfig.ini file located in the Make_yearly_raster folder. This text document lets you configure your geographic and temporal parameters and indicate  the directory information for where you want the raster(s) stored in GEE. 
 
 * STATE: The US state that contains your presence/absence data points
 * STATE_ABBREVIATION: The two letter abbreviation for your chosen state. e.g. Montana = MT
@@ -67,10 +71,18 @@ Open the aisconfig.ini file
 * GEE_PATH: The GEE path to your Earth Engine user directory. Must end in a forward slash. e.g. `users/kjchristensen93/`
 * ASSETID: GEE path to where the covariate files will be exported. This is a directory, it must end in a forward slash.
 
-#### Make Covariates: ./make_covariates.py
-% cd C:/Users/Where_you_stored_make_covariates.py
+Save the ini file so that your updates are read by the next script.
 
-% python run make_covariates.py
+#### Make Covariates: ./make_covariates.py
+Go back to your Conda terminal. Change to the directory where you stored the Make_yearly_raster folder.  
+
+% cd C:/Users/YOUR_DIRECTORY/Make_yearly_raster
+
+This code will produce yearly environmental rasters for your selected state and timeframe at 100-meter resolution.
+
+% python make_covariates.py
+
+This can take a while.  You can view the upload status within the task tab of your GEE developers dashboard.
 
 #### Open the notebook
 Open model script notebook using Conda by runnning:
