@@ -29,11 +29,11 @@ Install Packages
 % conda install -c anaconda geopandas
 % conda install -c anaconda numpy
 % conda install -c conda-forge json-e
-% conda install -c requests
-% conda install -c shapely
-% conda install -c functools
+% conda install shapely
 % pip install notebook
 ```
+
+If you are getting an error when installing pckages, you may need to copy libcrypto-1_1-x64.* and libssl-1_1-x64.* from anaconda3>library>bin to ananconda3>dlls.
 
 #### Earthengine authentication
 Make sure you have access to an Earth Engine account and have installed Python earthengine-api. 
