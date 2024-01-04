@@ -28,10 +28,10 @@ Install Packages
 % conda install -c anaconda pandas
 % conda install -c anaconda geopandas
 % conda install -c anaconda numpy
-% conda install-c conda-forge json-e
-% conda install-c requests
-% conda install-c shapely
-% conda install-c functools
+% conda install -c conda-forge json-e
+% conda install -c requests
+% conda install -c shapely
+% conda install -c functools
 % pip install notebook
 ```
 
