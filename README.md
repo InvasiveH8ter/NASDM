@@ -20,6 +20,7 @@ Create Conda environment prior to using this package. Replace NAME with your cho
 % conda create -n NAME python=3 
 
 Activate your new environment
+
 % conda activate NAME
 ```
 This should make package installation run faster.
@@ -27,12 +28,12 @@ This should make package installation run faster.
 ...
 Install Packages
 
-% conda install -c conda-forge earthengine-api
-% conda install -c conda-forge gdal
+% conda install earthengine-api
+% conda install gdal
 % conda install shapely
 % conda install fiona
-% conda install -c anaconda numpy
-% conda install -c anaconda pandas
+% conda install numpy
+% conda install pandas
 % conda install geopandas
 % conda install jmcmurray::json
 % pip install notebook
