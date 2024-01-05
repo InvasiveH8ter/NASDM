@@ -25,11 +25,13 @@ Activate your new environment
 Install Packages
 
 % conda install -c conda-forge earthengine-api
+% conda install -c conda-forge gdal
+% conda install shapely
+% conda install fiona
+% conda install -c anaconda numpy
 % conda install -c anaconda pandas
 % conda install -c anaconda geopandas
-% conda install -c anaconda numpy
 % conda install -c conda-forge json-e
-% conda install shapely
 % pip install notebook
 ```
 
