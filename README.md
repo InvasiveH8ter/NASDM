@@ -22,6 +22,9 @@ Create Conda environment prior to using this package. Replace NAME with your cho
 Activate your new environment
 % conda activate NAME
 ```
+This should make package installation run faster.
+% conda update -n base -c defaults conda
+...
 Install Packages
 
 % conda install -c conda-forge earthengine-api
@@ -30,8 +33,8 @@ Install Packages
 % conda install fiona
 % conda install -c anaconda numpy
 % conda install -c anaconda pandas
-% conda install -c anaconda geopandas
-% conda install -c conda-forge json-e
+% conda install geopandas
+% conda install jmcmurray::json
 % pip install notebook
 ```
 
