@@ -11,10 +11,13 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 * Next download and store the scripts and background shapefile from this GitHub on your local drive.
 
 ---
-## Shorthand
+#### Shorthand
+
 GEE = Google Earth Engine
+
 ---
-## Setup Conda
+#### Setup Conda
+
 Open the Anaconda PowerShell Terminal from your start menu.
 
 This should make package installation run faster. The script will pause and ask you if you wish to proceed.  Type y and hit enter.
@@ -35,7 +38,8 @@ Activate your new environment
 conda activate NAME
 ```
 
-### Install Packages
+#### Install Packages
+
 The script will pause and ask you if you wish to proceed.  Type y and hit enter.
 
 % means copy and run each line individually in the Conda Terminal
@@ -59,7 +63,7 @@ In order to do both of these, we need a set of environmental data.
 The following sections will walk you through making your yearly environmental rasters.
 For this section, it is assumed that your Conda environment is properly set up.
 
-### Set up GEE directories
+#### Set up GEE directories
 Go to https://developers.google.com/earth-engine
 Create folder in your assets tab to store your yearly raster images in.  
 
@@ -68,16 +72,37 @@ Open the Jupyter notebook dashboard using Conda by runnning:
 ```
 python -m notebook
 ```
+#### Make Yearly Covariate Rasters
 Navigate to the directory with the model script and open the Make_Covariates notebook.  
 
-## Configure the temporal and spatial settings for your taxa.
+Run the first 2 cells and complete GEE authentication.
+
+#### Configure the temporal and spatial settings for your taxa.
 state_abbrev = 'XX' # 2-digit postal abbreviation
+
 start_year = YYYY
+
 end_year = YYYY
+
 description = 'covariate' # this is the name displayed on the task tab in GEE developer dashboard
+
 assetId = 'users/ee-Your-GEE-Cloud-ID/covariates_' # GEE path and name for where to store your yearly covariate rasters.
 
+Run the rest of the cells to start creating yearly covariate rasters. These can take up to an hour depending on the size of the state. Progress can be examined on the task tab on your GEE Developers Dashboard
+
+#### Run the model
+
 Open the Model_script notebook
+
+Configure paths for your covariate rasters and background GEE assets.
+
+Obtain species ID via the link in the notebook.
+
+Run all cells to produce a heatmap and histogram of false negatives.
+
+
+
+
 
 
 
