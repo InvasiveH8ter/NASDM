@@ -8,7 +8,7 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 
 * Create a Google Earth Engine account: https://code.earthengine.google.com/register
 * Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
-* Next download and store the scripts from this GitHub on your local drive.
+* Next download and store the scripts and background shapefile from this GitHub on your local drive.
 
 ---
 ## Shorthand
