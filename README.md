@@ -1,5 +1,5 @@
 # NASDM
-Non-Indigenous Aquatic Species habitat suitability prediction toolset
+Non-Indigenous Aquatic Species Distribution Modeling Toolset
 
 ---
 
@@ -12,90 +12,73 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 
 ---
 ## Shorthand
-% indicates type this into the terminal (without %)
+GEE = Google Earth Engine
 ---
 ## Setup Conda
-Create Conda environment prior to using this package. Replace NAME with your chosen environment name
+Open the Anaconda PowerShell Terminal from your start menu.
 
-% conda create -n NAME python=3 
+This should make package installation run faster. The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+```
+conda update -n base -c defaults conda
+conda config --set channel_priority flexible
+```
+
+Create Conda environment. 
+
+Replace NAME with your chosen environment name. The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+```
+conda create -n NAME python=3 
+```
 
 Activate your new environment
-
-% conda activate NAME
 ```
-This should make package installation run faster.
-% conda update -n base -c defaults conda
-...
-Install Packages
+conda activate NAME
+```
 
+### Install Packages
+The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+
+% means copy and run each line individually in the Conda Terminal
+```
 % conda install earthengine-api
-% conda install gdal
-% conda install shapely
-% conda install fiona
+% conda install geemap
+% conda install GDAL
 % conda install numpy
 % conda install pandas
 % conda install geopandas
 % conda install jmcmurray::json
 % pip install notebook
 ```
-
-If you are getting an error when installing packages, you may need to copy libcrypto-1_1-x64.* and libssl-1_1-x64.* from anaconda3>library>bin to ananconda3>dlls.
-
-#### Earthengine authentication
-Make sure you have access to an Earth Engine account and have installed Python earthengine-api. 
-
-Run the following code and follow the prompts.
-
-% earthengine authenticate 
-
-You should now have an environment variable set up an authentication key, which allows you to directly initialize ee without authenticating it every time.
-
 ---
 
 ## Workflow
-
-###### Protip: GEE = Google Earth Engine
 
 The two goals of this software are to produce a prediction visualization and produce a testing result histogram.
 In order to do both of these, we need a set of environmental data. 
 
 The following sections will walk you through making your yearly environmental rasters.
-For this section, it is assumed that your conda environment is properly set up.
+For this section, it is assumed that your Conda environment is properly set up.
 
 ### Set up GEE directories
 Go to https://developers.google.com/earth-engine
 Create folder in your assets tab to store your yearly raster images in.  
 
-
-### Config: aisconfig.ini
-Open the aisconfig.ini file located in the Make_yearly_raster folder. This text document lets you configure your geographic and temporal parameters and indicate  the directory information for where you want the raster(s) stored in GEE. 
-
-* STATE: The US state that contains your presence/absence data points
-* STATE_ABBREVIATION: The two letter abbreviation for your chosen state. e.g. Montana = MT
-* START_YEAR: First year of interest range
-* END_YEAR: Last year of interest range
-* GEE_PATH: The GEE path to your Earth Engine user directory. Must end in a forward slash. e.g. `users/kjchristensen93/`
-* ASSETID: GEE path to where the covariate files will be exported. This is a directory, it must end in a forward slash.
-
-Save the ini file so that your updates are read by the next script.
-
-#### Make Covariates: ./make_covariates.py
-Go back to your Conda terminal. Change to the directory where you stored the Make_yearly_raster folder.  
-
-% cd C:/Users/YOUR_DIRECTORY/Make_yearly_raster
-
-This code will produce yearly environmental rasters for your selected state and timeframe at 100-meter resolution.
-
-% python make_covariates.py
-
-This can take a while.  You can view the upload status within the task tab of your GEE developers dashboard.
-
 #### Open the notebook
-Open model script notebook using Conda by runnning:
+Open the Jupyter notebook dashboard using Conda by runnning:
+```
+python -m notebook
+```
+Navigate to the directory with the model script and open the Make_Covariates notebook.  
 
-% python -m notebook
+## Configure the temporal and spatial settings for your taxa.
+state_abbrev = 'XX' # 2-digit postal abbreviation
+start_year = YYYY
+end_year = YYYY
+description = 'covariate' # this is the name displayed on the task tab in GEE developer dashboard
+assetId = 'users/ee-Your-GEE-Cloud-ID/covariates_' # GEE path and name for where to store your yearly covariate rasters.
 
-Navigate to the directory with the model script and open the notebook.
+Open the Model_script notebook
+
 
 
 
