@@ -63,19 +63,30 @@ In order to do both of these, we need a set of environmental data.
 The following sections will walk you through making your yearly environmental rasters.
 For this section, it is assumed that your Conda environment is properly set up.
 
-#### Set up GEE directories
+#### Set up GEE folders
 Go to https://developers.google.com/earth-engine
 Create folder in your assets tab to store your yearly raster images in.  
 
 #### Open the notebook
-Open the Jupyter notebook dashboard using Conda by runnning:
+Back in Conda (w/ your environment activated) change to the directory containing the scripts you downloaded by running:
+```
+cd C:/users/YourPath
+```
+Open the Jupyter notebook using Conda by runnning:
 ```
 python -m notebook
 ```
-#### Make Yearly Covariate Rasters
-Navigate to the directory with the model script and open the Make_Covariates notebook.  
+This will open a tab named Home in your browser which functions just like your Windows file folders.
 
-Run the first 2 cells and complete GEE authentication.
+You should see the 2 notebooks you downloaded:
+
+Make_Covariates_github.ipynb
+Model_script_github.ipynb
+
+#### Make Yearly Covariate Rasters
+Open the Make_Covariates notebook.  
+
+Run the first 2 cells using the play button at the top and complete GEE authentication.
 
 #### Configure the temporal and spatial settings for your taxa.
 state_abbrev = 'XX' # 2-digit postal abbreviation
