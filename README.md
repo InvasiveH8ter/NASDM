@@ -81,10 +81,11 @@ This will open a tab named Home in your browser which functions just like your W
 You should see the 2 notebooks you downloaded:
 
 Make_Covariates_github.ipynb
+
 Model_script_github.ipynb
 
 #### Make Yearly Covariate Rasters
-Open the Make_Covariates notebook.  
+Open the Make_Covariates_github notebook.  
 
 Run the first 2 cells using the play button at the top and complete GEE authentication.
 
@@ -103,7 +104,7 @@ Run the rest of the cells to start creating yearly covariate rasters. These can 
 
 #### Run the model
 
-Open the Model_script notebook
+Open the Model_script_github notebook
 
 Configure paths for your covariate rasters and background GEE assets.
 
@@ -111,7 +112,22 @@ Obtain species ID via the link in the notebook.
 
 Run all cells to produce a heatmap and histogram of false negatives.
 
+### Customization 
+You will notice there are lines of code which have been commented out by adding # in front. 
 
+#### Add Environmental Parameters
+
+See commented out cells in Make_Covariates_github
+
+Follow the example for adding NDSI for adding time series data from GEE to the modeling parameters. Note: Datasets like Modis and Landsat require quality filtering as shown in the example script.  The configuration may differ between datasets, but you can swap out bit and quality flag info as needed.
+
+There is also a commented out example for how to add a static parameter to your environmental rasters.
+
+#### Add your own occurence or background data
+
+See commented out cells in Model_script_github
+
+Follow the example to upload occurence data or background data from CSVs.
 
 
 
