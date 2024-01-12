@@ -6,59 +6,67 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ## Dependencies
 You will need to install Anaconda (Conda) and to create a Google Earth Engine Developers account to use this pipeline.
 
-* Create a Google Earth Engine account: https://code.earthengine.google.com/register
+* Create a Google Earth Engine (GEE) account:
+* visit https://code.earthengine.google.com/register
+
+Below the main registration link is the text, "Noncommercial users can also use Earth Engine without creating Cloud projects. Click here for the signup form."
+Click this link and fill in the required fields.
+You will receive an email with a link to the Earth Engine Code Editor.
+Follow this link to your Earth Engine account.
+Click on the Assets tab and then click on the NEW dropdown 
+You will be asked to create your username here, which can simply be left as is.
+After this, you should now have a Legacy Asset that you can add folders and upload data to.
+
+
+
 * Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
 * Next download and store the scripts and background shapefile from this GitHub on your local drive.
 
 ---
-#### Shorthand
 
-GEE = Google Earth Engine
-
----
 #### Setup Conda
 
 Open the Anaconda PowerShell Terminal from your start menu.
 
-This should make package installation run faster. The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+First, create yourConda environment 
 ```
-conda update -n base -c defaults conda
-conda config --set channel_priority flexible
+conda create -n NASDM python=3 
 ```
+Note:The script will pause and ask you if you wish to proceed.  Type y and hit enter.
 
-Create Conda environment. 
-
-Replace NAME with your chosen environment name. The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+Next, activate your new environment
 ```
-conda create -n NAME python=3 
+conda activate NASDM
 ```
-
-Activate your new environment
-```
-conda activate NAME
-```
-
 #### Install Packages
 
 The script will pause and ask you if you wish to proceed.  Type y and hit enter.
 
-% means copy and run each line individually in the Conda Terminal
 ```
-% conda install earthengine-api
-% conda install geemap
-% conda install GDAL
-% conda install numpy
-% conda install pandas
-% conda install geopandas
-% conda install jmcmurray::json
-% pip install notebook
+conda install earthengine-api
+```
+```
+conda install pandas
+```
+```
+conda install geopandas
+```
+```
+conda install geemap
+```
+```
+conda install jmcmurray::json
+```
+```
+pip install notebook
 ```
 ---
 
 ## Workflow
 
-The two goals of this software are to produce a prediction visualization and produce a testing result histogram.
-In order to do both of these, we need a set of environmental data. 
+The goals of this workflow are to produce yearly environmental raster images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. 
+
+First, you need a set of environmental data. 
 
 The following sections will walk you through making your yearly environmental rasters.
 For this section, it is assumed that your Conda environment is properly set up.
@@ -87,7 +95,10 @@ Model_script_github.ipynb
 #### Make Yearly Covariate Rasters
 Open the Make_Covariates_github notebook.  
 
-Run the first 2 cells using the play button at the top and complete GEE authentication.
+Run the first 2 cells using the play button at the top 
+GEE authentication will open a new window asking you to generate a token.  You must Choose/Create a Cloud Project for your notebook.  Here you need to click the link and accept the terms and conditions.
+Then click the button to create a new cloud project.
+This will take you back to the initial generate token screen where you should see your new cloud project name in the cloud project field.  Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
 #### Configure the temporal and spatial settings for your taxa.
 state_abbrev = 'XX' # 2-digit postal abbreviation
