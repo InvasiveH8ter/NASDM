@@ -6,6 +6,10 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ## Dependencies
 You will need to install Anaconda (Conda) and to create a Google Earth Engine Developers account to use this pipeline.
 
+* Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
+* Next download and store the scripts and background shapefile from this GitHub on your local drive.
+
+
 * Create a Google Earth Engine (GEE) account:
 * visit https://code.earthengine.google.com/register
 
@@ -13,14 +17,13 @@ Below the main registration link is the text, "Noncommercial users can also use 
 Click this link and fill in the required fields.
 You will receive an email with a link to the Earth Engine Code Editor.
 Follow this link to your Earth Engine account.
-Click on the Assets tab and then click on the NEW dropdown 
+Click on the Assets tab and then click on the NEW dropdown. 
 You will be asked to create your username here, which can simply be left as is.
 After this, you should now have a Legacy Asset that you can add folders and upload data to.
 
 
 
-* Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
-* Next download and store the scripts and background shapefile from this GitHub on your local drive.
+
 
 ---
 
