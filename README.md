@@ -77,6 +77,7 @@ For this section, it is assumed that your Conda environment is properly set up.
 #### Set up GEE folders
 Go to https://developers.google.com/earth-engine
 Create folder in your assets tab to store your yearly raster images in.  
+Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.  
 
 #### Open the notebook
 Back in Conda (w/ your environment activated) change to the directory containing the scripts you downloaded by running:
