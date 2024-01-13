@@ -14,16 +14,15 @@ You will need to install Anaconda (Conda) and to create a Google Earth Engine De
 * visit https://code.earthengine.google.com/register
 
 Below the main registration link is the text, "Noncommercial users can also use Earth Engine without creating Cloud projects. Click here for the signup form."
-Click this link and fill in the required fields.
+
+Click this link and fill in the required fields making sure to select research or academia wherever asked.
+
 You will receive an email with a link to the Earth Engine Code Editor.
+
 Follow this link to your Earth Engine account.
 Click on the Assets tab and then click on the NEW dropdown. 
 You will be asked to create your username here, which can simply be left as is.
 After this, you should now have a Legacy Asset that you can add folders and upload data to.
-
-
-
-
 
 ---
 
@@ -128,7 +127,13 @@ Obtain species ID via the link in the notebook.
 Run all cells to produce a heatmap and histogram of false negatives.
 
 ### Customization 
-You will notice there are lines of code which have been commented out by adding # in front. 
+You will notice there are lines of code which have been "commented out" by adding # in front. This means that the line is read as text. 
+
+These contain example script and instructions for adding your own environmental data (both static and timeseries) and occurence data.
+
+By removing the # from each line, you can run the block/cell.
+
+The following will direct you to where the specific customization examples are located
 
 #### Add Environmental Parameters
 
