@@ -138,6 +138,8 @@ Configure paths for your covariate rasters and background GEE assets.
 
 Obtain species ID via the link in the notebook. This will open a window where you can click control f to search for your target NAS.
 
+Configure MY_state_abbrev and MY_state
+
 Run all cells to produce a heatmap and histogram of false negatives.
 ----
 
@@ -146,9 +148,11 @@ Run all cells to produce a heatmap and histogram of false negatives.
 ### Customization 
 You will notice there are lines of code which have been "commented out" by adding # in front. This means that the line is read as text. 
 
-These contain example script and instructions for adding your own environmental data (both static and timeseries) and occurence data.
-
 By removing the # from each line, you can run the block/cell.
+
+These contain example script and instructions for adding your own environmental data (both static and timeseries) and occurence data 
+
+as well as for customizing the timeframe, extent modeled and resolution of inputs and model outputs.
 
 The following will direct you to where the specific customization examples are located
 
