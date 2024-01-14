@@ -30,7 +30,12 @@ After this, you should now have a Legacy Asset that you can add folders and uplo
 
 Open the Anaconda PowerShell Terminal from your start menu.
 
-First, create yourConda environment 
+First, create a Conda environment by copying the code below and pasting into your powershell prompt. Here we will be creating an environment called NASDM that runs python 3.  You can change the name to whatever you want, but the example here works as is. 
+
+Note: Right clicking will automatically paste the code you copy into the conda prompt.
+
+Also, clicking the up arrow will toggle back through your previous commands that you have run.
+
 ```
 conda create -n NASDM python=3 
 ```
@@ -42,7 +47,8 @@ conda activate NASDM
 ```
 #### Install Packages
 
-The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+The script will pause and ask you if you wish to proceed.  Type y and hit enter. You only have to install packages into your environment once.
+In the future, you can simpley activate your environment and open your Jupyter notebook as described below.
 
 ```
 conda install earthengine-api
@@ -75,10 +81,13 @@ For this section, it is assumed that your Conda environment is properly set up.
 
 #### Set up GEE folders
 Go to https://developers.google.com/earth-engine
-Create folder in your assets tab to store your yearly raster images in.  
+Create folder in your assets tab to store your yearly covariate images.  
 Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.  
 
 #### Open the notebook
+
+You can start here if you already have the initial set up completed above.
+
 Back in Conda (w/ your environment activated) change to the directory containing the scripts you downloaded by running:
 ```
 cd C:/users/YourPath
@@ -103,14 +112,19 @@ GEE authentication will open a new window asking you to generate a token.  You m
 Then click the button to create a new cloud project.
 This will take you back to the initial generate token screen where you should see your new cloud project name in the cloud project field.  Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
+You should only need to complete this process once and then you shouldn't need to authenticate again.
+
 #### Configure the temporal and spatial settings for your taxa.
+
+You can create covariate images from 2003 to 2023. Every year, you will be able to add an additional covariate raster image to update your model.
+
 state_abbrev = 'XX' # 2-digit postal abbreviation
 
 start_year = YYYY
 
 end_year = YYYY
 
-description = 'covariate' # this is the name displayed on the task tab in GEE developer dashboard
+description = 'covariate'  this is the name displayed on the task tab in GEE developer dashboard
 
 assetId = 'users/ee-Your-GEE-Cloud-ID/covariates_' # GEE path and name for where to store your yearly covariate rasters.
 
@@ -122,9 +136,12 @@ Open the Model_script_github notebook
 
 Configure paths for your covariate rasters and background GEE assets.
 
-Obtain species ID via the link in the notebook.
+Obtain species ID via the link in the notebook. This will open a window where you can click control f to search for your target NAS.
 
 Run all cells to produce a heatmap and histogram of false negatives.
+----
+
+
 
 ### Customization 
 You will notice there are lines of code which have been "commented out" by adding # in front. This means that the line is read as text. 
