@@ -146,6 +146,8 @@ Run all cells to produce a heatmap and histogram of false negatives.
 
 
 ### Customization 
+It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
+
 You will notice there are lines of code which have been "commented out" by adding # in front. This means that the line is read as text. 
 
 By removing the # from each line, you can run the block/cell.
@@ -155,6 +157,18 @@ These contain example script and instructions for adding your own environmental 
 as well as for customizing the timeframe, extent modeled and resolution of inputs and model outputs.
 
 The following will direct you to where the specific customization examples are located
+
+#### Spatial Extent
+
+Instructions to reduce the modeled extent or to increase it to multiple states can be found in the Model_script_github Jupyter Notebook
+
+#### Resolution
+
+Changing the scale parameters in both Jupyter notebooks will change resolution for environmental data aggregation and for the pixel size for outputs
+
+#### Timeframe
+
+Instructions for customizing the timeframe of your model can be found in in the Model_script_github Jupyter Notebook
 
 #### Add Environmental Parameters
 
