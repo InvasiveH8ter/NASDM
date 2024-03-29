@@ -112,7 +112,7 @@ GEE authentication will open a new window asking you to generate a token.  You m
 Then click the button to create a new cloud project.
 This will take you back to the initial generate token screen where you should see your new cloud project name in the cloud project field.  
 
-Do not check the read-only options!!! We want to be able to write assets 
+#### Do not check the read-only options!!! We want to be able to write assets 
 
 Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
