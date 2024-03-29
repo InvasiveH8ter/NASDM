@@ -110,9 +110,17 @@ Open the Make_Covariates_github notebook.
 Run the first 2 cells using the play button at the top 
 GEE authentication will open a new window asking you to generate a token.  You must Choose/Create a Cloud Project for your notebook.  Here you need to click the link and accept the terms and conditions.
 Then click the button to create a new cloud project.
-This will take you back to the initial generate token screen where you should see your new cloud project name in the cloud project field.  Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
+This will take you back to the initial generate token screen where you should see your new cloud project name in the cloud project field.  
+
+Do not check the read-only options!!! We want to be able to write assets 
+
+Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
 You should only need to complete this process once and then you shouldn't need to authenticate again.
+
+#### Troubleshooting
+In the top right of the GEE developers screen the name of your cloud project is shown.  If you click on it a dropdown appears.  Click on Project Info and then on the Manage Cloud Project link.  
+You may need to enable the Earth Engine API or add additional permissions to allow the writing of assets.
 
 #### Configure the temporal and spatial settings for your taxa.
 
