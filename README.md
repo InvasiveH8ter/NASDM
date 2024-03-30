@@ -84,14 +84,8 @@ Go to https://developers.google.com/earth-engine
 Create folder in your assets tab to store your yearly covariate images.  
 Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.  
 
-#### Open the notebook
+#### Open the notebook (start here if you already have the initial set up completed)
 
-You can start here if you already have the initial set up completed above.
-
-Back in Conda (w/ your environment activated) change to the directory containing the scripts you downloaded by running:
-```
-cd C:/users/YourPath
-```
 Open the Jupyter notebook using Conda by runnning:
 ```
 python -m notebook
@@ -136,7 +130,12 @@ description = 'covariate'  this is the name displayed on the task tab in GEE dev
 
 assetId = 'users/ee-Your-GEE-Cloud-ID/covariates_' # GEE path and name for where to store your yearly covariate rasters.
 
-Run the rest of the cells to start creating yearly covariate rasters. These can take up to an hour depending on the size of the state. Progress can be examined on the task tab on your GEE Developers Dashboard
+Run the rest of the cells to start creating yearly covariate rasters. 
+
+It takes between 10 and 40 minutes to create a yearly parameter raster depending on pixel size (scale) and the size of the state.
+Fortunately, Earth Engine uploads multiple assets at the same time.
+
+Progress can be examined on the task tab on your GEE Developers Dashboard
 
 #### Run the model
 
@@ -156,7 +155,7 @@ Run all cells to produce a heatmap and histogram of false negatives.
 ### Customization 
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
 
-You will notice there are lines of code which have been "commented out" by adding # in front. This means that the line is read as text. 
+Through out the code you will notice lines which have been "commented out" by adding # in front. This means that the line is read as text. 
 
 By removing the # from each line, you can run the block/cell.
 
@@ -164,7 +163,9 @@ These contain example script and instructions for adding your own environmental 
 
 as well as for customizing the timeframe, extent modeled and resolution of inputs and model outputs.
 
-The following will direct you to where the specific customization examples are located
+The following will direct you to where the specific customization examples can be found.
+
+It is recommended that you store any of your own files within the same folder as your scripts which will allow you to just use the filename as the path when importing your data.
 
 #### Spatial Extent
 
