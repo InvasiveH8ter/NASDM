@@ -3,7 +3,7 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 
 ---
 
-## Dependencies
+## Software Installation (for Windows OS)
 You will need to install Anaconda (Conda) and to create a Google Earth Engine Developers account to use this pipeline.
 
 * Download and Install anaconda commandline terminal: https://www.anaconda.com/products/distribution
