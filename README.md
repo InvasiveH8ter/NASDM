@@ -127,7 +127,13 @@ Open the Model_script_github notebook
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ed525c72-ec18-4dbc-9fb6-0a3d7ef5ca86)
 ----
 
-Run all cells to produce a heatmap and histogram of false negatives.
+# Run all cells to produce a heatmap and histogram of false negatives.
+
+----
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/f559c200-9235-4c75-94bd-b38d2f807fcd)
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/164a6589-5c13-48b8-8a52-69bb862afaad)
+
 
 ----
 
