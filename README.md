@@ -28,13 +28,7 @@ These instructions include screenshots to help walk you through setup and runnin
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b0cb5d7e-2c4d-47ee-ad03-8bd4df5d228e)
 
 ----
-
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/12ca51d3-0020-4d1a-9038-d54681cd69d5)
-
-----
-
-
+# Setup Environment & Install Packages
 
 ```
 conda create -n NASDM python=3 
@@ -43,10 +37,6 @@ conda create -n NASDM python=3
 ```
 conda activate NASDM
 ```
-----
-# Install Packages
-
-## With your environment activated
 
 ```
 pip install earthengine-api
@@ -78,14 +68,12 @@ pip install notebook
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/504e8717-a27f-488a-b85c-5c6d0922c429)
 
 ----
-# Upload Background files to Earth Engine
 
-Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/13683670-df92-4011-8101-089dc0d3b05d)
+
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/2f09985d-aece-4b91-86e9-16a399339bfb)
-----
 
 # Open the notebook (start here if you already have the initial set up completed)
 
