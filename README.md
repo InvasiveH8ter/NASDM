@@ -82,8 +82,17 @@ conda install jmcmurray::json
 pip install notebook
 ```
 ----
-* Finally, download the zipped GitHu and store the files from this GitHub on your local drive.
----
+
+## Download GitHub Repository
+
+----
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/4c553efb-52b2-4c1e-b8c7-8a0fcbe34718)
+
+
+store the files from this GitHub on your local drive.
+
+----
 ## Workflow
 ----
 
