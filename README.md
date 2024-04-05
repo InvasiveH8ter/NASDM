@@ -2,6 +2,7 @@
 Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
 The Following provides detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. 
+These instructions include screenshots to help walk you through setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
 
 ---
 ## Setup (for Windows OS)
@@ -22,7 +23,7 @@ Click on the Assets tab and then click on the NEW dropdown.
 
 You will be asked to create your username here, which can simply be left as is.
 
-After this, you should now have a GEE Cloud Project that you can add folders and upload data to.
+You should now have a GEE Cloud Project that you can add folders and upload data to.
 
 ----
 
@@ -223,6 +224,12 @@ There is also a commented out example for how to add a static parameter to your 
 See commented out cells in Model_script_github
 
 Follow the example to upload occurence data or background data from CSVs.
+
+#### Change the model algorithm
+
+Earth Engine has many built in functions for machine learning.  MaxEnt was chosen because of the presence-only nature of the data available. 
+
+If you have absence data, the algorithm can be changed to something like Random Forest see: https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest#colab-python 
 
 
 
