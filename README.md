@@ -7,23 +7,15 @@ These instructions include screenshots to help walk you through setup and runnin
 ---
 ## Setup (for Windows OS)
 
-First, create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
+## Download GitHub Repository
 
----
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1c2982bb-f6ef-4569-a0db-a95fe87016c1)
 ----
-## Finalize GEE Account Registration
 
-You will receive an email with a link to the Earth Engine Code Editor.
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1e320f02-4ef5-43c4-b513-fc57252bc618)
 
-Follow this link to your Earth Engine account.
 
-Click on the Assets tab and then click on the NEW dropdown. 
 
-You will be asked to create your username here, which can simply be left as is.
-
-You should now have a GEE Cloud Project that you can add folders and upload data to.
+Store the files from this GitHub on your local drive.
 
 ----
 
@@ -47,7 +39,6 @@ Create a Conda environment by copying the code below and pasting into your power
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/12ca51d3-0020-4d1a-9038-d54681cd69d5)
 ----
 
-Here we will be creating an environment called NASDM that runs python 3.  You can change the name to whatever you want, but the example here works as is.
 ```
 conda create -n NASDM python=3 
 ```
@@ -83,17 +74,18 @@ conda install jmcmurray::json
 pip install notebook
 ```
 ----
+Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
-## Download GitHub Repository
+---
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1c2982bb-f6ef-4569-a0db-a95fe87016c1)
+----
+## Finalize GEE Account Registration
+
+
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/4c553efb-52b2-4c1e-b8c7-8a0fcbe34718)
-
-
-store the files from this GitHub on your local drive.
-
-----
 ## Workflow
 ----
 
