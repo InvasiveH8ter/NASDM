@@ -6,7 +6,7 @@ These instructions include screenshots to help walk you through setup and runnin
 
 ---
 
-## Download GitHub Repository
+# Download GitHub Repository
 
 ----
 
@@ -14,37 +14,39 @@ These instructions include screenshots to help walk you through setup and runnin
 
 ----
 
-## Install Anaconda (or other Python package management software)
+# Install Anaconda (or other Python package management software)
 
-Download the latest version of Conda: https://www.anaconda.com/products/distribution
+## Download the latest version of Conda: https://www.anaconda.com/products/distribution
 
-Run setup file from download folder
+## Run setup file from download folder
+
+----
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/68341f35-1942-499d-8a88-f8061d669f98)
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b0cb5d7e-2c4d-47ee-ad03-8bd4df5d228e)
 
 ----
 
-----
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/12ca51d3-0020-4d1a-9038-d54681cd69d5)
+
 ----
+
+
 
 ```
 conda create -n NASDM python=3 
 ```
-Note: The script will pause and ask you if you wish to proceed.  Type y and hit enter.
 
-Next, activate your new environment
 ```
 conda activate NASDM
 ```
 ----
-#### Install Packages
+# Install Packages
 
-The script will pause and ask you if you wish to proceed.  Type y and hit enter. You only have to install packages into your environment once.
-In the future, you can simpley activate your environment and open your Jupyter notebook as described below.
+## With your environment activated
 
 ```
 pip install earthengine-api
@@ -70,24 +72,22 @@ pip install notebook
 ---
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1c2982bb-f6ef-4569-a0db-a95fe87016c1)
-----
-## Finalize GEE Account Registration
-
-
 
 ----
 
-## Workflow
-----
-
-First, you need a set of environmental data. 
-
-The following sections will walk you through making your yearly environmental rasters.
-For this section, it is assumed that your Conda environment is properly set up.
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/504e8717-a27f-488a-b85c-5c6d0922c429)
 
 ----
+# Upload Background files to Earth Engine
 
-#### Open the notebook (start here if you already have the initial set up completed)
+Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.
+
+----
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/2f09985d-aece-4b91-86e9-16a399339bfb)
+----
+
+# Open the notebook (start here if you already have the initial set up completed)
 
 Open the Jupyter notebook using Conda by runnning:
 ```
@@ -95,14 +95,17 @@ python -m notebook
 ```
 This will open a tab named Home in your browser which functions just like your Windows file folders.
 
+Navigate to where you unziped the repository files
+
 You should see the 2 notebooks you downloaded:
 
 Make_Covariates_github.ipynb
 
 Model_script_github.ipynb
+
 ----
 
-#### Make Yearly Covariate Rasters
+# Make Yearly Covariate Rasters
 Open the Make_Covariates_github notebook.  
 
 Run the first 2 cells using the play button at the top
@@ -118,7 +121,7 @@ Generate the token and then paste the info at the bottom of the final screen int
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/903ad78b-a034-406c-bf76-4021a82ab827)
 ----
 
-## Configure the temporal and spatial settings for your taxa.
+# Configure the temporal and spatial settings for your taxa.
 
 
 You can create covariate images from 2003 to 2023. Every year, you will be able to add an additional covariate raster image to update your model.
@@ -136,7 +139,7 @@ Progress can be examined on the task tab on your GEE Developers Dashboard
 
 ----
 
-## Troubleshooting
+# Troubleshooting
 If you receive an error during authenication, you may need to enable the Earth Engine API or add additional permissions to allow the writing of assets.
 
 In the top right of the GEE developers screen the name of your cloud project shown.  If you click on it a dropdown appears as shown above.  
@@ -144,16 +147,9 @@ In the top right of the GEE developers screen the name of your cloud project sho
 Click on Project Info and then on the Manage Cloud Project link. 
 ----
 
-## Upload Background files to Earth Engine
 
-Upload the background shapefile by clicking on NEW and selecting shapefile from the drop down.
 
-----
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/2f09985d-aece-4b91-86e9-16a399339bfb)
-----
-
-#### Run the model
+# Run the model
 
 Open the Model_script_github notebook
 
@@ -167,7 +163,7 @@ Run all cells to produce a heatmap and histogram of false negatives.
 
 ----
 
-### Customization 
+# Customization 
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
 
 Through out the code you will notice lines which have been "commented out" by adding # in front. This means that the line is read as text. 
@@ -182,19 +178,19 @@ The following will direct you to where the specific customization examples can b
 
 It is recommended that you store any of your own files within the same folder as your scripts which will allow you to just use the filename as the path when importing your data.
 
-#### Spatial Extent
+# Spatial Extent
 
 Instructions to reduce the modeled extent or to increase it to multiple states can be found in the Model_script_github Jupyter Notebook
 
-#### Resolution
+# Resolution
 
 Changing the scale parameters in both Jupyter notebooks will change resolution for environmental data aggregation and for the pixel size for outputs
 
-#### Timeframe
+# Timeframe
 
 Instructions for customizing the timeframe of your model can be found in in the Model_script_github Jupyter Notebook
 
-#### Add Environmental Parameters
+# Add Environmental Parameters
 
 See commented out cells in Make_Covariates_github
 
@@ -202,13 +198,13 @@ Follow the example for adding NDSI for adding time series data from GEE to the m
 
 There is also a commented out example for how to add a static parameter to your environmental rasters.
 
-#### Add your own occurence or background data
+# Add your own occurence or background data
 
 See commented out cells in Model_script_github
 
 Follow the example to upload occurence data or background data from CSVs.
 
-#### Change the model algorithm
+# Change the model algorithm
 
 Earth Engine has many built in functions for machine learning.  MaxEnt was chosen because of the presence-only nature of the data available. 
 
