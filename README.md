@@ -109,13 +109,6 @@ Generate the token and then paste the info at the bottom of the final screen int
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/903ad78b-a034-406c-bf76-4021a82ab827)
 ----
 
-# Configure the temporal and spatial settings for your taxa.
-
-
-You can create covariate images from 2003 to 2023. Every year, you will be able to add an additional covariate raster image to update your model.
-
-----
-
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/e7605af3-f680-4889-aab1-6c19a21c9499)
 ---
 Run the rest of the cells to start creating yearly covariate rasters. 
@@ -127,25 +120,12 @@ Progress can be examined on the task tab on your GEE Developers Dashboard
 
 ----
 
-# Troubleshooting
-If you receive an error during authenication, you may need to enable the Earth Engine API or add additional permissions to allow the writing of assets.
-
-In the top right of the GEE developers screen the name of your cloud project shown.  If you click on it a dropdown appears as shown above.  
-
-Click on Project Info and then on the Manage Cloud Project link. 
-----
-
-
-
 # Run the model
 
 Open the Model_script_github notebook
 
-Configure paths for your covariate rasters and background GEE assets.
-
-Obtain species ID via the link in the notebook. This will open a window where you can click control f to search for your target NAS.
-
-Configure MY_state_abbrev and MY_state
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ed525c72-ec18-4dbc-9fb6-0a3d7ef5ca86)
+----
 
 Run all cells to produce a heatmap and histogram of false negatives.
 
