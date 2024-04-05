@@ -5,17 +5,12 @@ The Following provides detailed instructions to produce yearly environmental ima
 These instructions include screenshots to help walk you through setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
 
 ---
-## Setup (for Windows OS)
 
 ## Download GitHub Repository
 
 ----
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1e320f02-4ef5-43c4-b513-fc57252bc618)
-
-
-
-Store the files from this GitHub on your local drive.
 
 ----
 
@@ -27,12 +22,9 @@ Run setup file from download folder
 
 ----
 
-## Setup Conda
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/68341f35-1942-499d-8a88-f8061d669f98)
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/6b32d5b1-996f-4dae-8d26-3f2b6148e4ca)
 ----
-
-Create a Conda environment by copying the code below and pasting into your powershell prompt as shown here.  
 
 ----
 
@@ -42,21 +34,20 @@ Create a Conda environment by copying the code below and pasting into your power
 ```
 conda create -n NASDM python=3 
 ```
-Note:The script will pause and ask you if you wish to proceed.  Type y and hit enter.
+Note: The script will pause and ask you if you wish to proceed.  Type y and hit enter.
 
 Next, activate your new environment
 ```
 conda activate NASDM
 ```
 ----
-
 #### Install Packages
 
 The script will pause and ask you if you wish to proceed.  Type y and hit enter. You only have to install packages into your environment once.
 In the future, you can simpley activate your environment and open your Jupyter notebook as described below.
 
 ```
-conda install earthengine-api
+pip install earthengine-api
 ```
 ```
 conda install pandas
@@ -74,7 +65,7 @@ conda install jmcmurray::json
 pip install notebook
 ```
 ----
-Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
+# Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
 ---
 
