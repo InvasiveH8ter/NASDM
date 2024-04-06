@@ -131,7 +131,8 @@ python -m notebook
 
 ## It takes between 10 and 40 minutes to create a yearly parameter raster depending on pixel size (scale) and the size of the state. Fortunately, Earth Engine uploads multiple assets at the same time.
 
-## Progress can be examined on the task tab on your GEE Developers Dashboard
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ba5c98cf-a339-4c93-8586-18ad027a998d)
+
 
 ----
 
