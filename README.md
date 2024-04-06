@@ -144,17 +144,18 @@ python -m notebook
 
 ----
 
-# Run all cells to produce a heatmap and histogram of false negatives.
+# Run all cells to produce a heatmap and histogram of testing results.
 
 ----
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/f559c200-9235-4c75-94bd-b38d2f807fcd)
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/164a6589-5c13-48b8-8a52-69bb862afaad)
-
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/809f97f8-afe5-435a-8004-fc7f1f4ba8dd)
 
 ----
 
 
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/722ef262-ed52-4753-8874-59b7d42b1728)
+
+
+----
 
 # Customization 
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
