@@ -6,9 +6,11 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
 # Background
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1571ccf4-6605-4929-9c17-8482f8fb2e9d)
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/54545d43-b47b-487c-8cc0-25852484fcc6)
 
+----
 
+# Machine Learning Algorithm: MaxEnt
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
 
 
@@ -87,34 +89,38 @@ pip install notebook
 
 # 4) Open the notebook (start here if you already have the initial set up completed)
 
-Open the Jupyter notebook using Conda by runnning:
+## Open the Jupyter notebook using Conda by runnning:
 ```
 python -m notebook
 ```
-This will open a tab named Home in your browser which functions just like your Windows file folders.
+## This will open a tab named Home in your browser which functions just like your Windows file folders.
 
-Navigate to where you unziped the repository files
+## Navigate to where you unziped the repository files
 
-You should see the 2 notebooks you downloaded:
+## You should see the 2 notebooks you downloaded:
 
-Make_Covariates_github.ipynb
+## Make_Covariates_github.ipynb
 
-Model_script_github.ipynb
+## Model_script_github.ipynb
 
 ----
 
 # 5) Make Yearly Covariate Rasters
-Open the Make_Covariates_github notebook.  
+## Open the Make_Covariates_github notebook.  
 
-Run the first 2 cells using the play button at the top
+----
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/9bf63863-f12e-472a-a3ed-8df95a6b8091)
+----
 
-GEE authentication will open a new window asking you to generate a token.  
+## Run the first 2 cells using the play button at the top
 
-You must Choose/Create a Cloud Project for your notebook.  
+## GEE authentication will open a new window asking you to generate a token.  
 
-#### Do not check the read-only options!!! We want to be able to write assets 
+## You must Choose/Create a Cloud Project for your notebook.  
 
-Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
+# Do not check the read-only options!!! We want to be able to write assets 
+
+## Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/903ad78b-a034-406c-bf76-4021a82ab827)
 ----
@@ -133,7 +139,8 @@ Generate the token and then paste the info at the bottom of the final screen int
 
 ## Open the Model_script_github notebook
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ed525c72-ec18-4dbc-9fb6-0a3d7ef5ca86)
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/149286da-0106-41ce-8683-7fa14d44bdf3)
+
 ----
 
 # Run all cells to produce a heatmap and histogram of false negatives.
@@ -145,6 +152,8 @@ Generate the token and then paste the info at the bottom of the final screen int
 
 
 ----
+
+
 
 # Customization 
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
