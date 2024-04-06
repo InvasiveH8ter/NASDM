@@ -1,12 +1,21 @@
 # NASDM
 Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
-The Following provides detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. 
-These instructions include screenshots to help walk you through setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
+# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
 
----
+----
+# Background
 
-# Download GitHub Repository
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1571ccf4-6605-4929-9c17-8482f8fb2e9d)
+
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
+
+
+----
+
+
+# 1) Download GitHub Repository
 
 ----
 
@@ -14,7 +23,7 @@ These instructions include screenshots to help walk you through setup and runnin
 
 ----
 
-# Install Anaconda (or other Python package management software)
+# 2) Install Anaconda (or other Python package management software)
 
 ## Download the latest version of Conda: https://www.anaconda.com/products/distribution
 
@@ -57,7 +66,7 @@ conda install jmcmurray::json
 pip install notebook
 ```
 ----
-# Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
+# 3) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
 ---
 
@@ -65,7 +74,8 @@ pip install notebook
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/504e8717-a27f-488a-b85c-5c6d0922c429)
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/a204a0d4-ddc8-4f94-aea7-206a183dae05)
+
 
 ----
 
@@ -75,7 +85,7 @@ pip install notebook
 ----
 
 
-# Open the notebook (start here if you already have the initial set up completed)
+# 4) Open the notebook (start here if you already have the initial set up completed)
 
 Open the Jupyter notebook using Conda by runnning:
 ```
@@ -93,7 +103,7 @@ Model_script_github.ipynb
 
 ----
 
-# Make Yearly Covariate Rasters
+# 5) Make Yearly Covariate Rasters
 Open the Make_Covariates_github notebook.  
 
 Run the first 2 cells using the play button at the top
@@ -111,18 +121,17 @@ Generate the token and then paste the info at the bottom of the final screen int
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/e7605af3-f680-4889-aab1-6c19a21c9499)
 ---
-Run the rest of the cells to start creating yearly covariate rasters. 
+## Run the rest of the cells to start creating yearly covariate rasters. 
 
-It takes between 10 and 40 minutes to create a yearly parameter raster depending on pixel size (scale) and the size of the state.
-Fortunately, Earth Engine uploads multiple assets at the same time.
+## It takes between 10 and 40 minutes to create a yearly parameter raster depending on pixel size (scale) and the size of the state. Fortunately, Earth Engine uploads multiple assets at the same time.
 
-Progress can be examined on the task tab on your GEE Developers Dashboard
+## Progress can be examined on the task tab on your GEE Developers Dashboard
 
 ----
 
-# Run the model
+# 6) Run the model
 
-Open the Model_script_github notebook
+## Open the Model_script_github notebook
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ed525c72-ec18-4dbc-9fb6-0a3d7ef5ca86)
 ----
