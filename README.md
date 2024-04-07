@@ -17,7 +17,7 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
 
 
-# 1) Download GitHub Repository
+# Step 1) Download GitHub Repository
 
 ----
 
@@ -25,21 +25,17 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 
 ----
 
-# 2) Install Anaconda (or other Python package management software)
+# Step 2) Install Anaconda (or other Python package management software)
 
 ## Download the latest version of Conda: https://www.anaconda.com/products/distribution
 
 ## Run setup file from download folder
 
 ----
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
-
-----
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b0cb5d7e-2c4d-47ee-ad03-8bd4df5d228e)
 
-----
-# Setup Environment & Install Packages
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
 
 ```
 conda create -n NASDM python=3 
@@ -68,7 +64,7 @@ conda install jmcmurray::json
 pip install notebook
 ```
 ----
-# 3) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
+# Step 3) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
 ---
 
@@ -87,7 +83,7 @@ pip install notebook
 ----
 
 
-# 4) Open the notebook (start here if you already have the initial set up completed)
+# Step 4) Open the notebook (start here if you already have the initial set up completed)
 
 ## Open the Jupyter notebook using Conda by runnning:
 ```
@@ -105,7 +101,7 @@ python -m notebook
 
 ----
 
-# 5) Make Yearly Covariate Rasters
+# Step 5) Make Yearly Covariate Rasters
 ## Open the Make_Covariates_github notebook.  
 
 ----
@@ -136,7 +132,7 @@ python -m notebook
 
 ----
 
-# 6) Run the model
+# Step 6) Run the model
 
 ## Open the Model_script_github notebook
 
