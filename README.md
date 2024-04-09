@@ -1,7 +1,7 @@
 # NASDM
 Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
-# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
+# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through the setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
 
 ----
 # Background
