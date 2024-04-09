@@ -9,13 +9,19 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/54545d43-b47b-487c-8cc0-25852484fcc6)
 
 ----
+# Environmental Data
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/40dee12c-3b37-4e19-a292-927359ec7e8e)
+
+----
 
 # Machine Learning Algorithm: MaxEnt
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
 
 
 ----
-
+# Start of Instructions
+----
 
 # Step 1) Download GitHub Repository
 
