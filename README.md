@@ -1,7 +1,7 @@
 # NASDM
 Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
-# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through the setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document.
+# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through the setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. 
 
 ----
 # Background
@@ -9,6 +9,13 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/54545d43-b47b-487c-8cc0-25852484fcc6)
 
 ----
+
+# USGS NAS Database
+----
+# The USGS Non-Indigenous Aquatic Species (NAS) database contains the most comprehensive record of occurences for more than 2,000 NAS.  This script is designed to pull data directly from this database via species ID and can be used to model any taxa on NAS. Information for obtaining these species ID's is provided below and within the model script. To see the current distributions of a NAS visit: https://nas.er.usgs.gov/default.aspx
+
+----
+
 # Environmental Data
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/40dee12c-3b37-4e19-a292-927359ec7e8e)
@@ -27,7 +34,7 @@ Non-Indigenous Aquatic Species Distribution Modeling Toolset
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/1e320f02-4ef5-43c4-b513-fc57252bc618)
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/107a3a6a-5075-4baa-a6bc-dffdc680d64f)
 
 ----
 
