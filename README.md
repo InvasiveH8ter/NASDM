@@ -160,6 +160,7 @@ python -m notebook
 ----
 
 # Customization 
+----
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
 
 Through out the code you will notice lines which have been "commented out" by adding # in front. This means that the line is read as text. 
@@ -176,7 +177,11 @@ It is recommended that you store any of your own files within the same folder as
 
 # Spatial Extent
 
-Instructions to reduce the modeled extent or to increase it to multiple states can be found in the Model_script_github Jupyter Notebook
+Instructions to reduce the modeled extent can be found in the Model_script_github Jupyter Notebook
+
+# Extrapolate Trained Model
+
+Instructions to train the model with data from states with presences to states without presences can be found in the Model_script_github Jupyter Notebook
 
 # Resolution
 
