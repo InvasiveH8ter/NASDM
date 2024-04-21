@@ -165,7 +165,11 @@ python -m notebook
 
 
 ----
+# Export your files and build Earth Engine Web App to explore and share your heatmaps with others
 
+## https://code.earthengine.google.com/5e256daa090142adcb8a62d3d8c41b6f
+
+----
 # Customization 
 ----
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
