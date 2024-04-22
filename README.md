@@ -153,15 +153,18 @@ python -m notebook
 
 ----
 
-# Run all cells to produce a heatmap and histogram of testing results.
+# Run all cells to produce a heatmap, histogram of testing results and to plot parameter importance.
 
 ----
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/809f97f8-afe5-435a-8004-fc7f1f4ba8dd)
 
 ----
 
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/6586eca5-8bae-41bf-b668-41270f40e569)
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/722ef262-ed52-4753-8874-59b7d42b1728)
+----
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/512106a7-89bc-4ba4-a5b6-57e827fdabd2)
 
 
 ----
