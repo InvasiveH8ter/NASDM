@@ -112,6 +112,9 @@ conda install jmcmurray::json
 ```
 pip install notebook
 ```
+
+## If you encounter an error during package installation try a different installation package. For example if conda install fails, try pip install of conda forge.  When all else fails, copy the text from the error message and paste it into your browser search bar.  I gaurantee you are not the first person to get this error.
+
 ----
 # Step 3) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
@@ -159,7 +162,7 @@ python -m notebook
 
 ## Run the first 2 cells using the play button at the top
 
-## GEE authentication will open a new window asking you to generate a token which is like a temporary password which you will plug into the Jupyter Notebook to allow it to access your GEE repository. 
+## GEE authentication will open a new window asking you to generate a token which is simply a temporary password which you will plug into the Jupyter Notebook to allow it to access your GEE repository. 
 
 ## You must Choose/Create a Cloud Project for your notebook.  
 
