@@ -1,12 +1,29 @@
 # NASDM
 Non-Indigenous Aquatic Species Distribution Modeling Toolset
 ----
-# The Following provides background and detailed instructions to produce yearly environmental images, pull occurence data from the USGS NAS database and to produce a visualization of risk for spread with performance metrics. These instructions include screenshots to help walk you through the setup and running of this workflow. Instructions for customization are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. 
+## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to alliw managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
+
+*development Sponsored by NASA
+
 
 ----
 # Background
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/54545d43-b47b-487c-8cc0-25852484fcc6)
+## Definitions
+
+Google Earth Engine (GEE) = Interactive online development environment for using RSD w/ built-in modeling functions. Earth Engine has emerged as a solution to democratizing the use of big data. Here we combine publically available RSD products from NASA and other sources with the computing power of Google to provide a solution to predicting the risk of spread for NAS. Instructions for registering your non-commercial (academic/research) project are provided below. 
+
+Jupyter Notebook = Application for writing and organizing Python code into blocks. We provide (below) Jupiter Notebooks with code (scripts) you can use to quickly start running models to predict and map AIS.
+
+Python = High-level programing language for data manipulation and communicating with online databases. 
+
+Anaconda (Conda) = Interface for Python package management and deployment. Instructions for download, installation and setup of Conda are provided below.
+
+Packages = A way to organize and structure your Python code into reusable components. Script can be easilly copied below to install required packages
+
+Environments = Directories that contains a specific collection of packages that you have installed. Script can be easilly copied below to create your Conda environment.
+
+API’s = Application Programming Interface, which is a software interface that allows two or more computer programs to communicate with each other. Here you will use the USGS NAS database API to retrieve training data and the Google Earth Engine API to talk to your Earth Engine Account.
 
 ----
 
@@ -170,7 +187,11 @@ python -m notebook
 ----
 # Export your files and build Earth Engine Web App to explore and share your heatmaps with others
 
+Once you have exported your heatmap and nas data points assets click this link 
+
 ## https://code.earthengine.google.com/5e256daa090142adcb8a62d3d8c41b6f
+
+Instructions for setup are provided within the linked script (Under-Construction)
 
 ----
 # Customization 
