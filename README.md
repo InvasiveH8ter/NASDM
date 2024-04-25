@@ -1,15 +1,12 @@
-# NASDM
-Non-Indigenous Aquatic Species Distribution Modeling Toolset
+# Non-Indigenous Aquatic Species Distribution Modeling Toolset (NASDM)
 ----
-## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to alliw managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
+## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
 
-*development Sponsored by NASA
-
+## *development Sponsored by NASA
 
 ----
-# Background
-
 ## Definitions
+The USGS Non-Indigenous Aquatic Species (NAS) database = The most comprehensive North American record of occurences for more than 2,000 NAS.  This script is designed to pull data directly from this database via species ID and can be used to model any taxa on the NAS database. Information for obtaining these species ID's is provided below and within the model script. To see the current distributions of a NAS visit: https://nas.er.usgs.gov/default.aspx.
 
 Google Earth Engine (GEE) = Interactive online development environment for using RSD w/ built-in modeling functions. Earth Engine has emerged as a solution to democratizing the use of big data. Here we combine publically available RSD products from NASA and other sources with the computing power of Google to provide a solution to predicting the risk of spread for NAS. Instructions for registering your non-commercial (academic/research) project are provided below. 
 
@@ -27,21 +24,43 @@ API’s = Application Programming Interface, which is a software interface that 
 
 ----
 
-# USGS NAS Database
-----
-# The USGS Non-Indigenous Aquatic Species (NAS) database contains the most comprehensive record of occurences for more than 2,000 NAS.  This script is designed to pull data directly from this database via species ID and can be used to model any taxa on NAS. Information for obtaining these species ID's is provided below and within the model script. To see the current distributions of a NAS visit: https://nas.er.usgs.gov/default.aspx
-
-----
-
 # Environmental Data
+ 
+## MODIS AQUA LST MYD11A2 (V6)
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/40dee12c-3b37-4e19-a292-927359ec7e8e)
+- Land Surface Temperature
+
+## MODIS AQUA MYD13A2 (V6)
+
+-  Normalized Vegetation Index (NDVI) = 
+
+## MODIS TERRA MOD44B
+
+- Percent Tree Cover
+
+## National Land Data Assimilation System
+
+- Precipitation
+
+## MODIS Surface Reflectance (CONUS)
+
+- Gross Primary Productivity
+
+## Shuttle Radar Topography Mission (SRTM) 
+
+- Heat Insolation Load
+- Topographic Diversity
+
+## Landsat 5, 7, and 8 
+
+- Flashiness
 
 ----
 
 # Machine Learning Algorithm: MaxEnt
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
 
+## MaxEnt is a well validated approach for  presence-only species distribution modeling that can deal with noisy data and has been used in many taxa including nonequilibrium organisms like invasive species (Phillips, 2004; Villero et al., 2017; Valavi et al., 2023). When applied to SDMs, information on environmental parameters at presence locations are used to create a probability distribution of ideal conditions with respect to the distribution of the parameters across the study area as defined by the background points (Phillips, 2004).
 
 ----
 # Start of Instructions
@@ -140,11 +159,11 @@ python -m notebook
 
 ## Run the first 2 cells using the play button at the top
 
-## GEE authentication will open a new window asking you to generate a token.  
+## GEE authentication will open a new window asking you to generate a token which is like a temporary password which you will plug into the Jupyter Notebook to allow it to access your GEE repository. 
 
 ## You must Choose/Create a Cloud Project for your notebook.  
 
-# Do not check the read-only options!!! We want to be able to write assets 
+# Do not check the read-only options!!! We want to be able to write data and files to your GEE repository 
 
 ## Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
 
