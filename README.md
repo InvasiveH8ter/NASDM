@@ -195,7 +195,7 @@ python -m notebook
 
 Once you have exported your heatmap and nas data points assets click this link 
 
-## https://code.earthengine.google.com/5e256daa090142adcb8a62d3d8c41b6f
+## https://code.earthengine.google.com/aa86ed2362a49dfbb81610832080aff5
 
 Instructions for setup are provided within the linked script (Under-Construction)
 
