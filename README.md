@@ -2,9 +2,32 @@
 ----
 ## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
 
-## *development Sponsored by NASA
+## *Development Sponsored by NASA
+![thumbnail_image002](https://github.com/InvasiveH8ter/NASDM/assets/109878461/a98768bc-9eec-4414-84fc-229ca4e9e4b2)
+
+
 
 ----
+
+# WHY USE REMOTE SENSING DATA TO AIS SPREAD?
+
+Remote-sensing data products are extremely valuable in predicting AIS spread because they represent relevant environmental data, such as stream and lake surface temperature, flow, flooding, riparian vegetation, and disturbance, for the construction of predictive models and maps needed to identify locations of likely AIS spread (Table 1). 
+
+# Remote-sensing products in our web tool
+Surface temperature is highly correlated with stream and water body temperatures, which influence the energetics and habitats of aquatic species (Gardner et al. 2003; Caissie 2006; Oyler et al. 2015). Land surface temperature (LST) observed from satellite thermal infrared remote-sensing represents integrated surface “skin” temperatures, vegetation canopy, water, snow (when present), and soil elements within the satellite footprint. Relatively long-term and well-calibrated LST records from Terra and Aqua MODIS, and Landsat have been effective in representing water temperature patterns influencing AIS spread (Carter et al. 2021; Tavares et al. 2019). We generally use best quality (QC) 1-km resolution, 8-day composite LST records from MODIS as a proxy for temperature conditions influencing aquatic habitat quality, presence of AIS, and species vulnerability to AIS (Kanno et al. 2015; Wade et al. 2016); similar LST records are produced from SNP/JPS1 VIIRS, which can be calibrated to provide LST continuity beyond the EOS MODIS era (Hulley et al. 2017). We also use finer scale (100m) LST retrievals available in Landsat 8 TIRS records to evaluate local temperature spatial heterogeneity in relation to surface water cover, vegetation, and terrain conditions, beneath the effective grain of MODIS LST.  
+ 
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/30a2a8d5-561a-4c82-ba7d-284a870429fa)
+Surface water cover dynamics records are available from long-term Landsat data and can capture local (30m) water body distributions, inundation persistence or flashiness (flooding), and longer-term wetting/drying trends (Pekel et al. 2016; Jones 2019; Lehner et al. 2022). Fast water and flooding of spawning nests can prevent non-native fish invasion (rainbow & brook trout, and bass). We have used these data as indicators of surface water connectivity and persistence to model aquatic habitats and AIS spread (Whited et al. 2012; Carter et al. 2021), which can distinguish lakes and their connectivity to adjacent river networks and riparian wetlands down to the level of a 4th order stream channel network (Luck et al. 2010; Whited et al. 2013). Water occurrence and persistence metrics from the historical Landsat record (1984-present) also capture transient inundation from seasonal flooding, which can influence connectivity within and between catchments and affect aquatic habitats and AIS spread. Potential enhancements to the ML framework include analyzing LST over large lakes identified from Landsat and other ancillary data (Lehner et al. 2022) to estimate LST patterns and trends affecting water quality and habitat conditions suitable for colonization by AIS like mussels, milfoil, brook trout, etc. (Loppnow et al. 2013).
+
+Vegetation cover and ecosystem productivity derived from RSD can provide effective proxies for riparian habitats and terrestrial carbon and nutrient inputs affecting aquatic food webs (Finstad et al. 2016). Our ML framework uses MODIS 250m estimates of fractional tree cover (Hansen et al. 2003) and canopy greenness (Didan 2015), which we found to be significant predictors of AIS presence (Carter et al. 2021). Alternative, finer scale (30m) estimates of greenness and productivity are available from Landsat (Robinson 2018) and evaluated here for model improvement. Forest biomass maps derived from satellite LIDAR and radar are becoming available (Silva et al. 2021) to enhance our information on standing biomass cover potentially affecting aquatic habitats.
+
+----
+
+# Machine Learning Algorithm: MaxEnt
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
+
+MaxEnt is a well validated approach for  presence-only species distribution modeling that can deal with noisy data and has been used in many taxa including nonequilibrium organisms like invasive species (Phillips, 2004; Villero et al., 2017; Valavi et al., 2023). When applied to SDMs, information on environmental parameters at presence locations are used to create a probability distribution of ideal conditions with respect to the distribution of the parameters across the study area as defined by the background points (Phillips, 2004).
+
 ## Definitions
 The USGS Non-Indigenous Aquatic Species (NAS) database = The most comprehensive North American record of occurences for more than 2,000 NAS.  This script is designed to pull data directly from this database via species ID and can be used to model any taxa on the NAS database. Information for obtaining these species ID's is provided below and within the model script. To see the current distributions of a NAS visit: https://nas.er.usgs.gov/default.aspx.
 
@@ -24,45 +47,6 @@ API’s = Application Programming Interface, which is a software interface that 
 
 ----
 
-# Environmental Data
- 
-## MODIS AQUA LST MYD11A2 (V6)
-
-- Land Surface Temperature
-
-## MODIS AQUA MYD13A2 (V6)
-
--  Normalized Vegetation Index (NDVI) = 
-
-## MODIS TERRA MOD44B
-
-- Percent Tree Cover
-
-## National Land Data Assimilation System
-
-- Precipitation
-
-## MODIS Surface Reflectance (CONUS)
-
-- Gross Primary Productivity
-
-## Shuttle Radar Topography Mission (SRTM) 
-
-- Heat Insolation Load
-- Topographic Diversity
-
-## Landsat 5, 7, and 8 
-
-- Flashiness
-
-----
-
-# Machine Learning Algorithm: MaxEnt
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b3ba2615-3e1d-4b70-86e1-1f85b2d54c28)
-
-## MaxEnt is a well validated approach for  presence-only species distribution modeling that can deal with noisy data and has been used in many taxa including nonequilibrium organisms like invasive species (Phillips, 2004; Villero et al., 2017; Valavi et al., 2023). When applied to SDMs, information on environmental parameters at presence locations are used to create a probability distribution of ideal conditions with respect to the distribution of the parameters across the study area as defined by the background points (Phillips, 2004).
-
-----
 # Start of Instructions
 ----
 
