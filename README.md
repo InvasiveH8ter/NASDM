@@ -9,7 +9,7 @@
 
 ----
 
-# WHY USE REMOTE SENSING DATA TO AIS SPREAD?
+# WHY USE REMOTE SENSING DATA TO Model AIS SPREAD?
 
 Remote-sensing data products are extremely valuable in predicting AIS spread because they represent relevant environmental data, such as stream and lake surface temperature, flow, flooding, riparian vegetation, and disturbance, for the construction of predictive models and maps needed to identify locations of likely AIS spread (Table 1). 
 
