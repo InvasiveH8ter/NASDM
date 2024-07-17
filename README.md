@@ -174,6 +174,7 @@ python -m notebook
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/149286da-0106-41ce-8683-7fa14d44bdf3)
 
+https://nas.er.usgs.gov/api/v2/species
 ----
 
 # Run all cells to produce a heatmap, histogram of testing results and to plot parameter importance.
