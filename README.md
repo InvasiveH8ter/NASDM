@@ -117,7 +117,8 @@ pip install notebook
 
 
 ----
-
+## The Full pipeline can now also be run entirely in GEE w/o creating yearly environmental rasters:
+https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7
 
 # Step 4) Open the notebook (start here if you already have the initial set up completed)
 
