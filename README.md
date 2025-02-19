@@ -1,3 +1,7 @@
+# There is now a point-and-click version which can be accessed via this link:
+https://drive.google.com/file/d/1fVzxm1O3LmXeYlA61O5WOQtG8JaBRbfX/view?usp=sharing
+
+
 # Non-Indigenous Aquatic Species Distribution Modeling Toolset (NASDM)
 ----
 ## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
