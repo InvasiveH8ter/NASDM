@@ -143,23 +143,12 @@ python -m notebook
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/6586eca5-8bae-41bf-b668-41270f40e569)
-
-----
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/512106a7-89bc-4ba4-a5b6-57e827fdabd2)
 
 
 ----
-# Export your files and build Earth Engine Web App to explore and share your heatmaps with others
 
-Once you have exported your heatmap and nas data points assets click this link 
-
-## https://code.earthengine.google.com/43a8f8e18312912982f9bda65eef5354
-
-Instructions for setup are provided within the linked script (Under-Construction)
-
-----
 # Customization 
 ----
 It is recommended that you build a functioning model for a single taxa and single state before attempting to customize.
