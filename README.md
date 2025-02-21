@@ -98,10 +98,7 @@ python nasdm_setup.py
 
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/13683670-df92-4011-8101-089dc0d3b05d)
 
-
-----
 ## Create your environmental data by running this script:
 [https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7](https://code.earthengine.google.com/f672c6ea4189a7cc86a801165e4f3b7b)
 
@@ -133,8 +130,7 @@ python -m notebook
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/903ad78b-a034-406c-bf76-4021a82ab827)
 ----
 
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/e7605af3-f680-4889-aab1-6c19a21c9499)
----
+
 ## Run the rest of the cells to start creating yearly covariate rasters. 
 
 # Step 6) Run the model
