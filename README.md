@@ -115,20 +115,10 @@ python -m notebook
 
 ## Navigate to where you unziped the repository files
 
-## You should see the 2 notebooks you downloaded:
-
-## Make_Covariates_github.ipynb
-
-## Model_script_github.ipynb
+## Open the model notebook
 
 ----
 
-# Step 5) Make Yearly Covariate Rasters
-## Open the Make_Covariates_github notebook.  
-
-----
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/9bf63863-f12e-472a-a3ed-8df95a6b8091)
-----
 
 ## Run the first 2 cells using the play button at the top
 
@@ -147,21 +137,8 @@ python -m notebook
 ---
 ## Run the rest of the cells to start creating yearly covariate rasters. 
 
-## It takes between 10 and 40 minutes to create a yearly parameter raster depending on pixel size (scale) and the size of the state. Fortunately, Earth Engine uploads multiple assets at the same time.
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/ba5c98cf-a339-4c93-8586-18ad027a998d)
-
-
-----
-
 # Step 6) Run the model
 
-## Open the Model_script_github notebook
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/149286da-0106-41ce-8683-7fa14d44bdf3)
-
-https://nas.er.usgs.gov/api/v2/species
-----
 
 # Run all cells to produce a heatmap, histogram of testing results and to plot parameter importance.
 
