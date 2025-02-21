@@ -1,5 +1,5 @@
 # There is now a point-and-click version which can be accessed via this link:
-Link TBD
+[Link TBD](https://drive.google.com/file/d/1N9RfVrGOqoTUQcwNKk9ZSDB8I95Xgsya/view?usp=sharing)
 
 
 # Non-Indigenous Aquatic Species Distribution Modeling Toolset (NASDM)
@@ -121,8 +121,8 @@ pip install notebook
 
 
 ----
-## The Full pipeline can now also be run entirely in GEE w/o creating yearly environmental rasters:
-https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7
+## Create your environmental data by running this script:
+[https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7](https://code.earthengine.google.com/f672c6ea4189a7cc86a801165e4f3b7b)
 
 # Step 4) Open the notebook (start here if you already have the initial set up completed)
 
