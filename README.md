@@ -75,31 +75,9 @@ API’s = Application Programming Interface, which is a software interface that 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
 
 ```
-conda create -n NASDM python=3 
+cd C:/Users/your_folderpath
 ```
-
-```
-conda activate NASDM
-```
-
-```
-pip install earthengine-api
-```
-```
-conda install pandas
-```
-```
-conda install geopandas
-```
-```
-conda install geemap
-```
-```
-conda install jmcmurray::json
-```
-```
-pip install notebook
-```
+python nasdm_setup.py
 
 ## If you encounter an error during package installation try a different installation package. For example if conda install fails, try pip install of conda forge.  When all else fails, copy the text from the error message and paste it into your browser search bar.  I gaurantee you are not the first person to get this error.
 
