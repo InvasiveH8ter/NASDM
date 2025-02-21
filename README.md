@@ -1,5 +1,5 @@
 # There is now a point-and-click version which can be accessed via this link:
-https://drive.google.com/file/d/1H6L59yYAEDmblyeHFk7uGvOhHSvpZp1y/view?usp=sharing
+Link TBD
 
 
 # Non-Indigenous Aquatic Species Distribution Modeling Toolset (NASDM)
