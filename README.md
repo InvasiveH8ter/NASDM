@@ -77,7 +77,10 @@ API’s = Application Programming Interface, which is a software interface that 
 ```
 cd C:/Users/your_folderpath
 ```
+
+```
 python nasdm_setup.py
+```
 
 ## If you encounter an error during package installation try a different installation package. For example if conda install fails, try pip install of conda forge.  When all else fails, copy the text from the error message and paste it into your browser search bar.  I gaurantee you are not the first person to get this error.
 
