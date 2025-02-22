@@ -8,9 +8,6 @@ https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=shari
 
 ## *Development Sponsored by NASA
 ![thumbnail_image002](https://github.com/InvasiveH8ter/NASDM/assets/109878461/a98768bc-9eec-4414-84fc-229ca4e9e4b2)
-
-
-
 ----
 
 # WHY USE REMOTE SENSING DATA TO Model AIS SPREAD?
@@ -55,7 +52,7 @@ API’s = Application Programming Interface, which is a software interface that 
 ----
 
 # Step 1) Download GitHub Repository
-
+# Remember where you put this because you need the folder path later!!!
 ----
 
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/107a3a6a-5075-4baa-a6bc-dffdc680d64f)
@@ -64,9 +61,7 @@ API’s = Application Programming Interface, which is a software interface that 
 
 # Step 2) Install Anaconda (or other Python package management software)
 
-## Download the latest version of Conda: https://www.anaconda.com/products/distribution
-
-## Run setup file from download folder
+## Download and install the latest version of Conda: https://www.anaconda.com/products/distribution
 
 ----
 
