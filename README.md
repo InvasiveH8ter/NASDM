@@ -102,6 +102,8 @@ python nasdm_setup.py
 ## Create your environmental data by running this script:
 [https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7](https://code.earthengine.google.com/f672c6ea4189a7cc86a801165e4f3b7b)
 
+## Note this GEE code exports the RSD raster as a geotiff to your google drive repository.  You then need to download it and save it in the same folder as the rest of your files
+
 # Step 4) Open the notebook (start here if you already have the initial set up completed)
 
 ## Open the Jupyter notebook using Conda by runnning:
@@ -110,30 +112,23 @@ python -m notebook
 ```
 ## This will open a tab named Home in your browser which functions just like your Windows file folders.
 
-## Navigate to where you unziped the repository files
+## Navigate to where you unziped the repository files (you are probably already there if you changed to you file directory)
 
-## Open the model notebook
+## Open the model-GitHub.ipynb notebook
 
+## Use the run button in the header to run blocks of code in Juptyer Notebook
+
+## You will need to define these values in the second block of code
+my_state = 'MN'
+my_nas_id = 5
+MY_scale = 1000
+
+ 
 ----
 
 
-## Run the first 2 cells using the play button at the top
 
-## GEE authentication will open a new window asking you to generate a token which is simply a temporary password which you will plug into the Jupyter Notebook to allow it to access your GEE repository. 
-
-## You must Choose/Create a Cloud Project for your notebook.  
-
-# Do not check the read-only options!!! We want to be able to write data and files to your GEE repository 
-
-## Generate the token and then paste the info at the bottom of the final screen into the field that is now available back in your Jupyter notebook.
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/903ad78b-a034-406c-bf76-4021a82ab827)
-----
-
-
-## Run the rest of the cells to start creating yearly covariate rasters. 
-
-# Step 6) Run the model
+## Run the rest of the cells to start modelling. 
 
 
 # Run all cells to produce a heatmap, histogram of testing results and to plot parameter importance.
