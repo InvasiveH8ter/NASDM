@@ -2,6 +2,12 @@
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
 
+# Upcoming improvements to the version described below include:
+ - Scripts to produce water quality features (e.g., Ca, pH & DO)
+ - Scripts to produce native and invasive community composition related features
+ - Scripts to produce Boater movement and distance to source via road and river network for additional states
+----
+
 # Non-Indigenous Aquatic Species Distribution Modeling Toolset (NASDM)
 ----
 ## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
