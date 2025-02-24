@@ -107,7 +107,7 @@ python -m notebook
 ```
 ## This will open a tab named Home in your browser which functions just like your Windows file folders.
 
-## Navigate to where you unziped the repository files (you are probably already there if you changed to you file directory)
+## Navigate to where you unziped the repository files (you are probably already there if you changed to your file directory in Conda)
 
 ## Open the model-GitHub.ipynb notebook
 
