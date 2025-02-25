@@ -4,6 +4,11 @@ https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=shari
 
 # To install and run first make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
 
+# To access the point-and-click demo click this link:
+
+https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
+
+
 # Upcoming improvements to the version described below include:
  - Scripts to produce water quality features (e.g., Ca, pH & DO)
  - Scripts to produce native and invasive community composition related features
