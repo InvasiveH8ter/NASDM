@@ -1,6 +1,8 @@
-# There is now a point-and-click version which can be accessed via this link:
+# There is now a Shiny App version which can be downloaded via this link:
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
+
+# To install and run first make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
 
 # Upcoming improvements to the version described below include:
  - Scripts to produce water quality features (e.g., Ca, pH & DO)
