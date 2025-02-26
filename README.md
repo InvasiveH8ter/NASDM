@@ -8,6 +8,7 @@ https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=shari
 
 https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 
+# Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
 
 # Upcoming improvements to the version described below include:
  - Scripts to produce water quality features (e.g., Ca, pH & DO)
