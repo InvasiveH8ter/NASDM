@@ -109,7 +109,7 @@ python nasdm_setup.py
 
 
 ## Create your environmental data by running this script:
-[https://code.earthengine.google.com/92f3642254da3644f0585be66ea2d9e7](https://code.earthengine.google.com/f672c6ea4189a7cc86a801165e4f3b7b)
+https://code.earthengine.google.com/935e3840bd5a63f1e40097b1f0c6ad45
 
 ## Note this GEE code exports the RSD raster as a geotiff to your google drive repository.  You then need to download it and save it in the same folder as the rest of your files
 
