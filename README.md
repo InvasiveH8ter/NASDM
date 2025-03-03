@@ -1,7 +1,8 @@
 # Recent updates:
 
-Repository includes a setup file which creates your Conda environment and installs required packages.
-Earth Engine is only used to produce your initial RSD predictor variables.
+- Repository includes a setup file which creates your Conda environment and installs required packages.
+- Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
+- Earth Engine is only used to produce your initial RSD predictor variables.
 
 # There is now a Shiny App version which can be downloaded via this link:
 
@@ -17,7 +18,8 @@ https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 
 # Upcoming improvements to the version described below include:
  - Scripts to produce water quality features (e.g., Ca, pH & DO)
- - Scripts to produce native and invasive community composition related features
+ - Scripts to produce native and invasive community composition related predictors
+ - Background data will be automatically created when creating invasive community composition related predictors
  - Scripts to produce Boater movement and distance to source via road and river network for additional states
 ----
 
