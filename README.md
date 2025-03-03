@@ -1,3 +1,8 @@
+# Recent updates:
+
+Repository includes a setup file which creates your Conda environment and installs required packages.
+Earth Engine is only used to produce your initial RSD predictor variables.
+
 # There is now a Shiny App version which can be downloaded via this link:
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
