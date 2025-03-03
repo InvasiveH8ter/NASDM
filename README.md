@@ -29,6 +29,7 @@ The Shiny apps run on the same back-end script and will be updated similarly to 
 Upcoming revisions unique to these shiny apps include:
 
  - Moving model variable selection boxes to a new panel on the right to allow visability above the fold of the page.
+ - Available states will be expanded to include ID, IA, IL, MT, MO, OR and WA. 
  - The current map function will be swapped out with an interactive mapping function to allow additional interaction with the output.
  - An additional navigation tab will be added with functionality to compare between model runs.
 
