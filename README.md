@@ -1,29 +1,32 @@
-# Recent updatesn to the version described below include:
+# Recent updates to the versions described below include:
 - Repository includes a setup file which creates your Conda environment and installs required packages.
 - Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
 - The python model script now produces an interactive map, predictor variable importance and performance plots. 
 - Earth Engine is only used to produce your initial RSD predictor variables.
 
-# Upcoming improvements to the version described below include:
+# Upcoming improvements to the versions described below include:
  - Scripts to produce water quality features (e.g., Ca, pH & DO)
  - Scripts to produce native and invasive community composition related predictors
  - Background data will be automatically created when creating invasive community composition related predictors
  - Scripts to produce Boater movement and distance to source via road and river network for additional states
+ - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings
+ - Functionality to simulate and quantify the impact of management actions (or inaction) and the effect on predicted risk (including watercraft inspection station placement and monitoring).
 ----
 
 # There is now a Shiny App version which can be downloaded via this link:
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
 
-# To install and run first make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
+To install and run first make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
 
 # To access the point-and-click demo click this link:
 
 https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 
-# Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
+Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
+The Shiny apps run on the same back-end script and will be updated similarly to the Jupyter Notebook version as new features are added.
 
-
+----
 
 # Non-Indigenous Aquatic Species Data/Modeling Toolset (NASDM)
 ----
