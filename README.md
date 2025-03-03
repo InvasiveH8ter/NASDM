@@ -2,6 +2,7 @@
 
 - Repository includes a setup file which creates your Conda environment and installs required packages.
 - Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
+- The python model script now produces an interactive map, predictor variable importance and performance plots. 
 - Earth Engine is only used to produce your initial RSD predictor variables.
 
 # There is now a Shiny App version which can be downloaded via this link:
