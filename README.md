@@ -17,14 +17,20 @@
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
 
-To install and run first make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
+To install and run the shiny app version locally, download the zipfile from this link. Make sure you have Anaconda installed and then follow the steps in the instructions_readme.txt file.
 
-# To access the point-and-click demo click this link:
+# To access the point-and-click demo open this link in a new browser tab:
 
 https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 
 Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
 The Shiny apps run on the same back-end script and will be updated similarly to the Jupyter Notebook version as new features are added.
+
+Upcoming revisions unique to these shiny apps include:
+
+ - Moving model variable selection boxes to a new panel on the right to allow visability above the fold of the page.
+ - The current map function will be swapped out with an interactive mapping function to allow additional interaction with the output.
+ - An additional navigation tab will be added with functionality to compare between model runs.
 
 ----
 
