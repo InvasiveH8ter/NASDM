@@ -9,7 +9,8 @@
  - Scripts to produce native and invasive community composition related predictors
  - Background data will be automatically created when creating invasive community composition related predictors
  - Scripts to produce Boater movement and distance to source via road and river network for additional states
- - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings
+ - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings.
+ - Multi-taxa modeling options.
  - Functionality to simulate and quantify the impact of management actions (or inaction) and the effect on predicted risk (including watercraft inspection station placement and monitoring).
 ----
 
