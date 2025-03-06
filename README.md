@@ -1,13 +1,13 @@
 # Recent updates to the versions described below include:
 - Repository includes a setup file which creates your Conda environment and installs required packages.
+- The repository now includes scripts to produce water quality features (e.g., Ca, pH & DO) & biodiversity predictors (e.g., native fish richness and invasive species richness).
+- Background data will be automatically created when creating invasive species predictors.
 - Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
 - The python model script now produces an interactive map, predictor variable importance and performance plots. 
 - Earth Engine is only used to produce your initial RSD predictor variables.
 
 # Upcoming improvements to the versions described below include:
- - Scripts to produce water quality features (e.g., Ca, pH & DO)
- - Scripts to produce native and invasive community composition related predictors
- - Background data will be automatically created when creating invasive community composition related predictors
+ 
  - Scripts to produce Boater movement and distance to source via road and river network for additional states
  - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings.
  - Multi-taxa modeling options.
