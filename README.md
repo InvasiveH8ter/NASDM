@@ -127,11 +127,10 @@ python nasdm_setup.py
 
 ----
 
-
 ## Create your environmental data by running this script:
 https://code.earthengine.google.com/935e3840bd5a63f1e40097b1f0c6ad45
 
-## Note this GEE code exports the RSD raster as a geotiff to your google drive repository.  You then need to download it and save it in the same folder as the rest of your files
+## Note this GEE code exports the RSD raster for your state as a geotiff to your google drive repository. It can take quite a while (i.e., hours to produce this file). However, you only have to do it once. You then need to download it and save it in the same folder as the rest of your files
 
 # Step 4) Open the notebook (start here if you already have the initial set up completed)
 
@@ -143,14 +142,14 @@ python -m notebook
 
 ## Navigate to where you unziped the repository files (you are probably already there if you changed to your file directory in Conda)
 
-## Open the model-GitHub.ipynb notebook
+## Open the make_predictors.ipynb notebook
 
 ## Use the run button in the header to run blocks of code in Juptyer Notebook
 
 ## You will need to define these values in the second block of code
 my_state = 'MN'
 my_nas_id = 5
-MY_scale = 1000
+
 
  
 ----
