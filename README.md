@@ -1,4 +1,5 @@
 # Recent updates to the versions described below include:
+- Model script can be configured to train on infested state and predict to uninfested state.
 - Repository includes a setup file which creates your Conda environment and installs required packages.
 - The repository now includes scripts to produce water quality features (e.g., Ca, pH & DO) & biodiversity predictors (e.g., native fish richness and invasive species richness).
 - Background data will be automatically created when creating invasive species predictors.
