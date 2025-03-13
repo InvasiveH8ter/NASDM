@@ -1,20 +1,3 @@
-# Recent updates to the versions described below include:
-- Model script can be configured to train on infested state and predict to uninfested state.
-- Repository includes a setup file which creates your Conda environment and installs required packages.
-- The repository now includes scripts to produce water quality features (e.g., Ca, pH & DO) & biodiversity predictors (e.g., native fish richness and invasive species richness).
-- Background data will be automatically created when creating invasive species predictors.
-- Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
-- The python model script now produces an interactive map, predictor variable importance and performance plots. 
-- Earth Engine is only used to produce your initial RSD predictor variables.
-
-# Upcoming improvements to the versions described below include:
- 
- - Scripts to produce Boater movement and distance to source via road and river network for additional states
- - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings.
- - Multi-taxa modeling options.
- - Functionality to simulate and quantify the impact of management actions (or inaction) and the effect on predicted risk (including watercraft inspection station placement and monitoring).
-----
-
 # There is now a Shiny App version which can be downloaded via this link:
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
@@ -28,14 +11,7 @@ https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
 The Shiny apps run on the same back-end script and will be updated similarly to the Jupyter Notebook version as new features are added.
 
-Upcoming revisions unique to these shiny apps include:
 
- - Moving model variable selection boxes to a new panel on the right to allow visability above the fold of the page.
- - Available states will be expanded to include ID, IA, IL, MT, MO, OR and WA. 
- - The current map function will be swapped out with an interactive mapping function to allow additional interaction with the output.
- - An additional navigation tab will be added with functionality to compare between model runs.
-
-----
 
 # Non-Indigenous Aquatic Species Data/Modeling Toolset (NASDM)
 ----
@@ -224,9 +200,33 @@ Follow the example to upload occurence data or background data from CSVs.
 Earth Engine has many built in functions for machine learning.  MaxEnt was chosen because of the presence-only nature of the data available. 
 
 If you have absence data, the algorithm can be changed to something like Random Forest see: https://developers.google.com/earth-engine/apidocs/ee-classifier-smilerandomforest#colab-python 
+----
 
+# Recent updates to the versions described below include:
+- Model script can be configured to train on infested state and predict to uninfested state.
+- Repository includes a setup file which creates your Conda environment and installs required packages.
+- The repository now includes scripts to produce water quality features (e.g., Ca, pH & DO) & biodiversity predictors (e.g., native fish richness and invasive species richness).
+- Background data will be automatically created when creating invasive species predictors.
+- Data is directly sourced from USGS NAS API at time of running the model.  This allows the most current data to be used and any taxa can be modeled by changing the species ID value.
+- The python model script now produces an interactive map, predictor variable importance and performance plots. 
+- Earth Engine is only used to produce your initial RSD predictor variables.
 
+# Upcoming improvements to the versions described below include:
+ 
+ - Scripts to produce Boater movement and distance to source via road and river network for additional states
+ - Functionality to cache and compare heatmaps and model analytics between models run with different parameter settings.
+ - Multi-taxa modeling options.
+ - Functionality to simulate and quantify the impact of management actions (or inaction) and the effect on predicted risk (including watercraft inspection station placement and monitoring).
+----
 
+Upcoming revisions unique to these shiny apps include:
+
+ - Moving model variable selection boxes to a new panel on the right to allow visability above the fold of the page.
+ - Available states will be expanded to include ID, IA, IL, MT, MO, OR and WA. 
+ - The current map function will be swapped out with an interactive mapping function to allow additional interaction with the output.
+ - An additional navigation tab will be added with functionality to compare between model runs.
+
+----
 
 
 
