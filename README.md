@@ -1,3 +1,10 @@
+# Non-Indigenous Aquatic Species Data/Modeling Toolset (NASDM)
+----
+## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
+
+## *Development Sponsored by NASA
+![thumbnail_image002](https://github.com/InvasiveH8ter/NASDM/assets/109878461/a98768bc-9eec-4414-84fc-229ca4e9e4b2)
+----
 # There is now a Shiny App version which can be downloaded via this link:
 
 https://drive.google.com/file/d/1e9WupEBT_dPEzuudrdVNDB1FcDurpdc8/view?usp=sharing
@@ -10,15 +17,6 @@ https://nasdm-shiny.shinyapps.io/nasdm_shiny_app/
 
 Please note that this takes quite a while to produce the heatmap and analytical plots in the model analytics tab.  These are among the bugs to be addressed as we polish this decision support tool.
 The Shiny apps run on the same back-end script and will be updated similarly to the Jupyter Notebook version as new features are added.
-
-
-
-# Non-Indigenous Aquatic Species Data/Modeling Toolset (NASDM)
-----
-## The following provides background and detailed instructions to produce environmental images, pull occurrence data from the USGS NAS database and relevant environmental data (e.g. remote sensing, see next section), to produce risk-maps for invasive species spread. This toolset also produces performance metrics to allowing managers to asses uncertainty in hotspot rankings (e.g., false AIS detection rates). The instructions below include screenshots to help walk you through the setup and running of this workflow (to model and map AIS-invasion hotspots). Instructions for customization (for your species or geographic area of interest) are also integrated throughout the various scripts used for this workflow. The locations for the blocks of code for specific customization are provided at the end of this document. The following tools and workflow can be applied to other species of interest including threatened native species to understand and predict habitat suitability and species distribution modeling (SDMs) (e.g, Carter et al. 2021 & van Reese et al. 2022?)
-
-## *Development Sponsored by NASA
-![thumbnail_image002](https://github.com/InvasiveH8ter/NASDM/assets/109878461/a98768bc-9eec-4414-84fc-229ca4e9e4b2)
 ----
 
 # WHY USE REMOTE SENSING DATA TO Model AIS SPREAD?
