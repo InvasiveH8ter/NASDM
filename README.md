@@ -73,7 +73,7 @@ API’s = Application Programming Interface, which is a software interface that 
 
 ----
 
-## Create your environmental data by running this script:
+## Create your environmental data by openning this script and changing the my_state, start_year and end_year variables to match your study area and timeframe
 [https://code.earthengine.google.com/89f45f7588502641c4ccd3f2f243df5d](https://code.earthengine.google.com/89f45f7588502641c4ccd3f2f243df5d)
 
 ## Note this GEE code exports the RSD raster for your state as a geotiff to your assets and to your google drive repository. It can take quite a while (i.e., hours to produce this file). However, you only have to do it once. You then need to download it and save it in the same folder as the rest of your files
