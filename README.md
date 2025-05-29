@@ -123,12 +123,19 @@ python -m notebook
 ## Use the run button in the header to run blocks of code in Juptyer Notebook
 
 ## You will need to define these values in the second block of code
-my_state = 'MN'
-my_nas_id = 5
- 
+my_state = 'MN' (2-digit postal abbreviation)
+state_name = 'Minnesota' (State name spelled out)
+my_nas_id = 5 (NAS species id from USGS NAS database)
+nas_name = 'zm' (whatever you want to use as an abbreviation for your model taxa)
+state_fips = '27' (State FIP identification number; Google it)
+
 ----
 
-# Step 4) Run the model
+# Step 4) Combine your predictors into a combined raster image.
+
+Working on this now...
+
+# Step 5) Run the model
 ## Now that you have all you predictors, open the model script notebook and run the rest of the cells to start modelling. 
 
 # This should produce a heatmap, histogram of testing results and to plot parameter importance.
