@@ -60,36 +60,7 @@ API’s = Application Programming Interface, which is a software interface that 
 # Start of Instructions
 ----
 
-# Step 1) Download GitHub Repository
-# Remember where you put this because you need the folder path later!!!
-----
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/107a3a6a-5075-4baa-a6bc-dffdc680d64f)
-
-----
-
-# Step 2) Install Anaconda (or other Python package management software)
-
-## Download and install the latest version of Conda: https://www.anaconda.com/products/distribution
-
-----
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b0cb5d7e-2c4d-47ee-ad03-8bd4df5d228e)
-
-![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
-
-```
-cd C:/Users/your_folderpath
-```
-
-```
-python nasdm_setup.py
-```
-
-## If you encounter an error during package installation try a different installation package. For example if conda install fails, try pip install of conda forge.  When all else fails, copy the text from the error message and paste it into your browser search bar.  I gaurantee you are not the first person to get this error.
-
-----
-# Step 3) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
+# Step 1) Create a Google Earth Engine (GEE) account w/ noncommercial cloud project: https://code.earthengine.google.com/register
 
 ---
 
@@ -105,9 +76,39 @@ python nasdm_setup.py
 ## Create your environmental data by running this script:
 [https://code.earthengine.google.com/935e3840bd5a63f1e40097b1f0c6ad45](https://code.earthengine.google.com/ecf198cd680360b077c6c7a6d1de4e4a)
 
-## Note this GEE code exports the RSD raster for your state as a geotiff to your google drive repository. It can take quite a while (i.e., hours to produce this file). However, you only have to do it once. You then need to download it and save it in the same folder as the rest of your files
+## Note this GEE code exports the RSD raster for your state as a geotiff to your assets and to your google drive repository. It can take quite a while (i.e., hours to produce this file). However, you only have to do it once. You then need to download it and save it in the same folder as the rest of your files
 
-# Step 4) Open the notebook (start here if you already have the initial set up completed)
+# Step 2) Download GitHub Repository and Unzip
+# Remember where you put this because you need the folder path later!!!
+----
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/107a3a6a-5075-4baa-a6bc-dffdc680d64f)
+
+----
+
+# Step 3) Install Anaconda (or other Python package management software)
+
+## Download and install the latest version of Conda: https://www.anaconda.com/products/distribution
+
+----
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/b0cb5d7e-2c4d-47ee-ad03-8bd4df5d228e)
+
+![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/7c07293e-0878-46d6-a46b-bd4dab9d5ea0)
+
+
+# In the conda powershell, navigate to the directory where you stored the downloaded scripts
+```
+cd C:/Users/your_folderpath
+```
+# Run setup script.  
+```
+python nasdm_setup.py
+```
+# Activate your environment
+```
+conda activate nasdm
+```
 
 ## Open the Jupyter notebook using Conda by runnning:
 ```
@@ -124,17 +125,13 @@ python -m notebook
 ## You will need to define these values in the second block of code
 my_state = 'MN'
 my_nas_id = 5
-
-
  
 ----
 
+# Step 4) Run the model
+## Now that you have all you predictors, open the model script notebook and run the rest of the cells to start modelling. 
 
-
-## Run the rest of the cells to start modelling. 
-
-
-# Run all cells to produce a heatmap, histogram of testing results and to plot parameter importance.
+# This should produce a heatmap, histogram of testing results and to plot parameter importance.
 
 ----
 ![image](https://github.com/InvasiveH8ter/NASDM/assets/109878461/809f97f8-afe5-435a-8004-fc7f1f4ba8dd)
