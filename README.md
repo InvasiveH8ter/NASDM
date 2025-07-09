@@ -133,7 +133,9 @@ state_fips = '27' (State FIP identification number; Google it)
 
 # Step 4) Combine your predictors into a combined raster image.
 
-Working on this now...
+After running the make_predictors script, you will have positive training data, taxa/state specific background data and your combined water quality, combined bio and combined distance tif files.  These need to be manually uploaded using the online GEE developers dashboard.  Just click on the assets tab and use the new drop down to do this.  Then run this script to create your final combined raster of predictors:
+
+https://code.earthengine.google.com/3bb0fefa1978d973bb1bd5d172550dc9
 
 # Step 5) Run the model
 ## Now that you have all you predictors, open the model script notebook and run the rest of the cells to start modelling. 
