@@ -18,23 +18,31 @@ Step 2) Create a Google Earth Engine (GEE) account w/ noncommercial cloud projec
 
 Step 3) Download and install the latest version of Conda: https://www.anaconda.com/products/distribution
 
-	Open the Conda Powershell using your start menu. In the conda powershell, navigate to the directory where you stored the downloaded scripts
-	```
+Open the Conda Powershell using your start menu. In the conda powershell, navigate to the directory where you stored the downloaded scripts
+	
+ 	
 	cd C:/Users/your_folderpath
-	```
-	Run setup script.  
-	```
+	
+	
+ Run setup script.  
+	
+ 	
 	python nasdm_setup.py
-	```
-	Activate your environment
-	```
+	
+	
+ Activate your environment
+	
+ 	
 	conda activate nasdm
-	```
-	Open the Jupyter notebook using Conda by runnning:
-	```
+	
+ 
+Open the Jupyter notebook using Conda by runnning:
+	
+ 	
 	python -m notebook
-	```
-	This will open a tab named Home in your browser which functions just like your Windows file folders.
+	
+ 
+This will open a tab named Home in your browser which functions just like your Windows file folders.
 
 Step 4) Create Water Chemistry, Biological and Distance predictors
 	
